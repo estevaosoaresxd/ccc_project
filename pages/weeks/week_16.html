@@ -12,10 +12,11 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <!--JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="../../style/style.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Semana 16</title>
 
 </head>
 
@@ -43,81 +44,278 @@
     </div>
   </nav>
   <!--Nav Bar-->
+  <div class="section center">
+    <h3><b>Arquitetura de Aplicativos</b></h3>
+    <h5 class="blue-text"><b>Semana 16</b></h5>
+  </div>
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
-  <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
-    <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
+  <div class="section padding-30 center">
+    <div class="row section">
+      <div class="offset-s1 col s4"><span class="flow-text"><b>Definição</b></span>
+        <p>A arquitetura de software é a
+          estrutura fundamental de um
+          sistema, incluindo a
+          organização de seus
+          componentes, suas relações e
+          seus princípios de design.
         </p>
       </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
-        </p>
-      </div>
-    </div>
-    <ul class="collapsible">
-      <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
+      <div class="col offset-s1 s4"><span class="flow-text"><b>Conceitos-chave</b></span>
+        <div class="row mt-10">
+          <b>Separação de responsabilidades:</b>
+          <span> os
+            diferentes componentes do aplicativo
+            devem ter responsabilidades claras e bem
+            definidas.</span>
         </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Animações Implícitas</div>
-        <div class="collapsible-body">
-          <div class="row">
+        <div class="row">
+          <b>Coesão:</b>
+          <span> os elementos relacionados devem
+            estar agrupados de forma lógica e coesa.
+            acoplamento: os elementos devem ser
+            interdependentes na medida certa,
+            evitando dependências excessivas.</span>
+        </div>
+        <div class="row">
+          <b>Acoplamento:</b>
+          <span> os elementos devem ser
+            interdependentes na medida certa,
+            evitando dependências excessivas.</span>
+        </div>
+        <div class="row">
+          <b>Legibilidade do código</b>
+          <span>: um código legível
+            facilita a manutenção e a colaboração no
+            desenvolvimento do aplicativo</span>
+        </div>
+      </div>
 
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
-            <div class="col s6">
-              <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
-              </div>
-            </div>
+      <div class="row section">
+        <div class="offset-s1 col s4"><span class="flow-text"><b>Vantagens</b></span>
+          <div class="row mt-10">
+            <span>● Uma arquitetura bem definida traz
+              diversos benefícios, como
+              modularidade, escalabilidade e
+              facilidade de manutenção.</span>
+          </div>
+          <div class="row">
+            <span>● Uma boa arquitetura permite que o
+              aplicativo cresça de forma
+              organizada e seja mais fácil de
+              manter e atualizar</span>
           </div>
         </div>
-      </li>
-    </ul>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
-  </div>
-  <!--Nav Bar-->
-
-  <!--Nav Bar-->
-
-
-
-  <!--Footer-->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <div class="col offset-s1 s4"><span class="flow-text"><b>Tipos de Arquiteturas</b></span>
+          <div class="row mt-10">
+            <b>● MVC ( MOVEL-VIEW-CONTROLLER)</b>
+          </div>
+          <div class="row">
+            <b>● MVVM (MODEL-VIEW-VIEW-MODEL)
+            </b>
+          </div>
+          <div class="row">
+            <b>● CLEAN ARCHITECTURE </b>
+          </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section padding-30">
+    <h5>Arquitetura MVC</h5>
+    <div class="row section">
+      <div class="col s4"><span class="flow-text"><b>Sobre</b></span>
+        <div class="row mt-10">
+          <span> Divide o aplicativo em três
+            componentes principais - modelo,
+            visualização e controlador</span>
+        </div>
+
+      </div>
+
+      <div class="col s4"><span class="flow-text"><b>Tipos</b></span>
+        <div class="row mt-10">
+          <b>Model:</b>
+          <span> fluxo de dados principal
+            nessa arquitetura. ele também
+            pode conter lógica de negócios.</span>
+        </div>
+        <div class="row">
+          <b>View:</b>
+          <span> recebe a entrada do
+            usuário e mostrar a interface do
+            usuário para o usuário.</span>
+        </div>
+        <div class="row">
+          <b>Controller:</b>
+          <span> contém lógica de
+            negócios com manipulação de
+            dados de entrada.</span>
+        </div>
+      </div>
+
+      <div class="col s4 center">
+        <img src="../../src/images//mvc_img.png" width="80%"></img>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section padding-30">
+    <h5>Arquitetura MVVM</h5>
+    <div class="row section">
+      <div class="col s4"><span class="flow-text"><b>Sobre</b></span>
+        <div class="row mt-10">
+          <span> MVVM é um padrão de arquitetura muito famoso
+            e estabelecido em desenvolvimento. ao aplicar
+            o mvvm, nosso código será reutilizável,
+            sustentável, facilmente testável e extensível.</span>
+        </div>
+
+      </div>
+
+      <div class="col  s4"><span class="flow-text"><b>Tipos</b></span>
+        <div class="row mt-10">
+          <b>Model:</b>
+          <span> contem lógica de negócios, validação
+            de código e consultas relacionadas ao banco
+            de dados interagindo com ViewModel.</span>
+        </div>
+        <div class="row">
+          <b>ViewModel:</b>
+          <span> solicita dados para o modelo e os
+            envia para a view. o viewmodel é o mediador
+            entre o view e o model. primeiro, viewmodel
+            lida com interações do usuário, em seguida, ele
+            solicita dados do model e os envia para a view.</span>
+        </div>
+        <div class="row">
+          <b>View:</b>
+          <span> é principalmente a interface do usuário
+            de um aplicativo onde um usuário interage com
+            widgets.</span>
+        </div>
+      </div>
+
+      <div class="col s4 center">
+        <img src="../../src/images/mvvm_img.png" width="80%"></img>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section padding-30">
+    <h5>Arquitetura Clean Architecture</h5>
+    <div class="row section">
+      <div class="col s4"><span class="flow-text"><b>Sobre</b></span>
+        <div class="row mt-10">
+          <span> A arquitetura limpa é a arquitetura mais
+            poderosa que promove a separação de
+            preocupações e a criação de sistemas de
+            software altamente sustentáveis e flexíveis.</span>
+        </div>
+
+      </div>
+
+      <div class="col s4"><span class="flow-text"><b>Prós</b></span>
+        <div class="row mt-10">
+          <b>● Organização</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Independencia de estruturas externas</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Estabilidade</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Flexibilidade</b>
+        </div>
+      </div>
+
+      <div class="col s4"><span class="flow-text"><b>Contras</b></span>
+        <div class="row mt-10">
+          <b>● Sobrecarga</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Complexidade</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Curva de aprendizado</b>
+        </div>
+        <div class="row mt-10">
+          <b>● Demorado</b>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section padding-30">
+    <h5>Atividade</h5>
+    <div class="row section">
+
+      <div class="col s4"><span class="flow-text"><b>1º Escolha da Arquitetura</b></span>
+        <div class="row mt-10">
+          <span> Os alunos devem escolher uma das opções de
+            arquitetura (MVC, MVVM ou Clean
+            Architecture) para implementar no aplicativo.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s4"><span class="flow-text"><b>2º Organização do Projeto</b></span>
+        <div class="row mt-10">
+          <span> Os alunos devem organizar o projeto em
+            camadas , de acordo com a arquitetura
+            escolhida.
+          </span>
+        </div>
+      </div>
+
+      <div class="col s4"><span class="flow-text"><b>3º Documentação e Apresentação</b></span>
+        <div class="row mt-10">
+          <span> Os alunos devem documentar o processo de
+            implementação da arquitetura escolhida e preparar
+            uma apresentação para compartilhar suas
+            experiências e desafios enfrentados.
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer blue lighten-2">
+    <div class="container ">
+      <div class="row">
+        <div class="col l5 s12">
+          <h5 class="white-text"><b>Venha aprender Flutter com a UTFPR !</b></h5>
+          <p class="grey-text text-lighten-4">As aplicações móveis estão em
+            constante crescimento e se tornaram
+            uma parte essencial da nossa vida
+            cotidiana.</p>
+          <p class="grey-text text-lighten-4">Se você tem interesse em aprender fluttter passo a passo, é só
+            seguir nosso cronograma explicativo do zero ao mestre !</p>
+        </div>
+        <div class="col l3 offset-l1 s4">
+          <h5 class="white-text">Tópicos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvimento de Aplicações móveis</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Semana 5-8</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -131,8 +329,7 @@
 
     <div class="footer-copyright">
       <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2023 <b>Flutter-UTFPR</b> Copyright
       </div>
     </div>
   </footer>
