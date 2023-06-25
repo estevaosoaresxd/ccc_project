@@ -44,70 +44,123 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
+  <h1>Widgets avançados e plugins</h1>
   <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
     <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
-        </p>
-      </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
+      <div class="col s6"><span class="flow-text">INTRODUÇÃO</span>
+        <p>Neste tópico, veremos alguns exemplos de widgets avançados, como: ListView, GridView e SliverAppBar, e também
+          o uso de plugins para funcionalidades adicionais, como: WebView e mapas.
         </p>
       </div>
     </div>
     <ul class="collapsible">
       <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
+        <div class="collapsible-header">Widgets avançados</div>
+        <div class="collapsible-body row">
+          <div class="col s4">
+            <span>
+              <b>ListView:</b>
+              <br>
+              ● Exibe uma lista vertical
+              rolável de itens de dados selecionáveis.
+              <br>
+              ● Gerencia a aparência da lista, mas a
+              aparência de cada item na lista é definida
+              por um DataTemplate que usa um Cell
+              para exibir os itens
+              <br>
+              ● Dá suporte à exibição de cabeçalhos e
+              rodapés, dados agrupados, pull-to-refresh e itens de menu de context
+            </span>
+          </div>
+          <div class="col s4">
+            <span>
+              <b>GridView:</b>
+              <br>
+              ● Usado para exibir os valores de uma
+              fonte de dados em uma tabela
+              <br>
+              ● Cada coluna representa um campo,
+              enquanto cada linha representa um
+              registro
+              <br>
+              ● Suporta várias funcionalidades, como
+              vinculação a controles de fonte de dados,
+              capacidades de classificação, atualização
+              e exclusão integradas e paginação
+              integrada
+            </span>
+          </div>
+          <div class="col s4">
+            <span>
+              <b>SliverAppBar:</b>
+              <br>
+              ● Widget de design que fornece uma barra
+              de aplicativo rolável ou recolhível
+              <br>
+              ● Usado como o primeiro filho de um
+              CustomScrollView.
+              <br>
+              ● Permite que a barra de aplicativos se
+              integre com a visualização de rolagem
+              para que possa variar em altura de
+              acordo com o deslocamento de rolagem
+              ou flutuar acima do outro conteúdo na
+              visualização de rolagem
+            </span>
+          </div>
         </div>
       </li>
+    </ul>
+    <ul class="collapsible">
       <li>
-        <div class="collapsible-header">Animações Implícitas</div>
+        <div class="collapsible-header">Plugins para funções adicionais</div>
         <div class="collapsible-body">
           <div class="row">
-
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
             <div class="col s6">
-              <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
-              </div>
+              <span>
+                <b>WebView:</b>
+                <br>
+                ● Um componente que permite exibir uma
+                página web dentro do seu aplicativo
+                <br>
+                ● O plugin também pode renderizar
+                widgets do Flutter sobre a visualização
+                da web, como um menu suspenso
+                <br>
+                ● É possível controlar o WebView através
+                do WebViewController, bloquear sites
+                usando o NavigationDelegate, avaliar
+                expressões de JavaScript, gerenciar
+                cookies e carregar HTML de recursos,
+                arquivos ou strings
+                <br>
+              </span>
+            </div>
+            <div class="col s6">
+              <span>
+                <b>Mapas:</b>
+                <br>
+                ● Com o plugin do Google Maps, é possível
+                adicionar mapas ao seu aplicativo com
+                base nos dados do Google Maps
+                <br>
+                ● Controla automaticamente o acesso aos
+                servidores do Google Maps, a exibição de
+                mapas e a resposta aos gestos do
+                usuário, como cliques e arrastos
+                <br>
+                ● É possível adicionar marcadores ao mapa
+                Esses objetos exibem informações
+                adicionais sobre os locais do mapa e
+                permitem que o usuário interaja com ele
+              </span>
             </div>
           </div>
         </div>
       </li>
     </ul>
   </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
-  </div>
-  <!--Nav Bar-->
-
-  <!--Nav Bar-->
-
-
-
   <!--Footer-->
   <footer class="page-footer">
     <div class="container">
