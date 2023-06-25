@@ -44,48 +44,66 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
   <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
+    <h4> Navegação entre telas em um aplicativo Flutter</h4>
     <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
-        </p>
-      </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
+      <div class="col s6"><span class="flow-text"></span>
+        <p>No Flutter, existem vários métodos para navegar entre telas em um aplicativo.<br> Há
+          dois dos métodos mais comuns: uso do widget Navigator e uso de rotas nomeadas.
         </p>
       </div>
     </div>
     <ul class="collapsible">
       <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
+        <div class="collapsible-header">Widget Navigator</div>
+        <div class="collapsible-body"><span> O Flutter fornece o widget Navigator para gerenciar a pilha de telas (ou rotas) em um
+          aplicativo. Você pode usar o Navigator para empilhar uma nova tela na parte superior da
+          pilha, empurrando-a para a frente, ou para remover uma tela da pilha, empurrando-a para
+          trás.
+          <div class="row">
+            Para navegar para uma nova tela usando o Navigator, você normalmente precisa executar
+            as seguintes etapas:
+          </div>
+          <div class="row">
+            ● Importe o pacote do Flutter:
+            <br>
+            <img src="../../src/images/semana05-img01.png">
+            <br>
+            ● Crie uma função para lidar com a navegação:
+            <br>
+            <img src="../../src/images/semana05-img02.png">
+            <br>
+            ● Chame a função de navegação em resposta a um evento, como um botão pressionado:
+            <br>
+            <img src="../../src/images/semana05-img03.png">
+            <br>
+            No exemplo acima, NewScreen() representa a tela para a qual você deseja navegar. Ao
+            chamar Navigator.push, você está adicionando uma nova rota à pilha e a tela será
+            empurrada para a frente.
+          </div>
         </div>
       </li>
       <li>
-        <div class="collapsible-header">Animações Implícitas</div>
+        <div class="collapsible-header">Rotas nomeadas</div>
         <div class="collapsible-body">
           <div class="row">
-
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
-            <div class="col s6">
-              <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
-              </div>
+            <div class="col s6"><span> O uso de rotas nomeadas fornece uma maneira mais estruturada de navegar entre telas,
+              permitindo que você defina um nome para cada rota e navegue para ela usando esse nome.
+              Isso torna o código mais organizado e facilita a manutenção.
+              <br>
+              ● Declare as rotas nomeadas no método MaterialApp ou CupertinoApp:
+              <br>
+              <img src="../../src/images/semana05-img04.png">
+              <br>
+              ● Navegue para uma nova tela usando o nome da rota:
+              <br>
+              <img src="../../src/images/semana05-img05.png">
+              <br>
+              É importante observar que, se você deseja passar dados para a nova tela ou retornar dados
+              da nova tela para a tela anterior, o Flutter fornece mecanismos adicionais, como
+              argumentos de rota e retornos de tela. Esses recursos podem ser usados em conjunto com
+              os métodos de navegação mencionados acima.
+            </span>
             </div>
           </div>
         </div>
@@ -94,8 +112,45 @@
   </div>
   <div class="divider"></div>
   <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
+    <h4>Gerenciamento de estado em um aplicativo Flutter</h4>
+    <div class="row">
+      <div class="col s6"><span class="flow-text"> </span>
+        <p>
+          No desenvolvimento de aplicativos Flutter, o gerenciamento de estado é uma parte
+          fundamental para manter a consistência e a sincronização dos dados entre os diferentes
+          componentes da interface do usuário. Existem várias abordagens para o gerenciamento de
+          estado em Flutter, incluindo o uso de bibliotecas externas, como o Provider, MobX, Redux,
+          entre outras. Além disso, o próprio Flutter possui um mecanismo interno chamado
+          "gerenciamento de estado local" que permite controlar o estado em um único widget.
+        </p>
+        <p>
+          <b>Gerenciamento de estado local (Stateful Widgets) </b>: Use widgets stateful para controlar o
+          estado dentro de um único widget. É adequado para aplicativos menores ou com requisitos
+          de estado simples.
+        </p>
+        <p>
+          <b>Provider:</b> Uma biblioteca popular que permite compartilhar estado eficientemente entre
+          widgets, seguindo o conceito de Injeção de Dependência. É útil para atualizar dados de
+          forma reativa.
+        </p>
+        <p>
+          <b>MobX:</b> Uma biblioteca poderosa que usa observáveis e reações para rastrear dependências
+          entre os dados e atualizar automaticamente a interface do usuário. É útil para gerenciar
+          estados complexos ou reativos.
+        </p>
+        <p>
+          <b>Redux:</b> Uma arquitetura de gerenciamento de estado que usa um store centralizado para
+          armazenar todo o estado do aplicativo e implementar um fluxo unidirecional para atualizar e
+          recuperar dados, adequado para aplicativos com grande quantidade de estado
+          compartilhado.
+        </p>
+        <p>
+          Essas são algumas das opções disponíveis, e a escolha depende do tamanho,
+          complexidade e necessidades do seu aplicativo. É recomendável experimentar diferentes
+          abordagens para encontrar a que melhor se adapte ao seu projeto.
+        </p>
+      </div>
+    </div>
   </div>
   <div class="divider"></div>
   <div class="section">
