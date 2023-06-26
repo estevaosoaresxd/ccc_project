@@ -65,21 +65,28 @@
             as seguintes etapas:
           </div>
           <div class="row">
-            ● Importe o pacote do Flutter:
-            <br>
-            <img src="../../src/images/semana05-img01.png">
-            <br>
-            ● Crie uma função para lidar com a navegação:
-            <br>
-            <img src="../../src/images/semana05-img02.png">
-            <br>
-            ● Chame a função de navegação em resposta a um evento, como um botão pressionado:
-            <br>
-            <img src="../../src/images/semana05-img03.png">
-            <br>
-            No exemplo acima, NewScreen() representa a tela para a qual você deseja navegar. Ao
-            chamar Navigator.push, você está adicionando uma nova rota à pilha e a tela será
-            empurrada para a frente.
+            <p>
+              ● Importe o pacote do Flutter:
+              <br>
+              <img src="../../src/images/semana05-img01.png">
+            </p>
+            <p>
+              ● Crie uma função para lidar com a navegação:
+              <br>
+              <img src="../../src/images/semana05-img02.png">
+              <br>
+            </p>
+            <p>
+              ● Chame a função de navegação em resposta a um evento, como um botão pressionado:
+              <br>
+              <img src="../../src/images/semana05-img03.png">
+              <br>
+            </p>
+            <p>
+              No exemplo acima, NewScreen() representa a tela para a qual você deseja navegar. Ao
+              chamar Navigator.push, você está adicionando uma nova rota à pilha e a tela será
+              empurrada para a frente.
+            </p>
           </div>
         </div>
       </li>
@@ -87,22 +94,30 @@
         <div class="collapsible-header">Rotas nomeadas</div>
         <div class="collapsible-body">
           <div class="row">
-            <div class="col s6"><span> O uso de rotas nomeadas fornece uma maneira mais estruturada de navegar entre telas,
-              permitindo que você defina um nome para cada rota e navegue para ela usando esse nome.
-              Isso torna o código mais organizado e facilita a manutenção.
-              <br>
-              ● Declare as rotas nomeadas no método MaterialApp ou CupertinoApp:
-              <br>
-              <img src="../../src/images/semana05-img04.png">
-              <br>
-              ● Navegue para uma nova tela usando o nome da rota:
-              <br>
-              <img src="../../src/images/semana05-img05.png">
-              <br>
-              É importante observar que, se você deseja passar dados para a nova tela ou retornar dados
-              da nova tela para a tela anterior, o Flutter fornece mecanismos adicionais, como
-              argumentos de rota e retornos de tela. Esses recursos podem ser usados em conjunto com
-              os métodos de navegação mencionados acima.
+            <div class="col s6"><span> 
+              <p>
+                O uso de rotas nomeadas fornece uma maneira mais estruturada de navegar entre telas,
+                permitindo que você defina um nome para cada rota e navegue para ela usando esse nome.
+                Isso torna o código mais organizado e facilita a manutenção.
+              </p>
+              <p>
+                ● Declare as rotas nomeadas no método MaterialApp ou CupertinoApp:
+                <br>
+                <img src="../../src/images/semana05-img04.png">
+                <br>
+              </p>
+              <p>
+                ● Navegue para uma nova tela usando o nome da rota:
+                <br>
+                <img src="../../src/images/semana05-img05.png">
+                <br>
+              </p>
+              <p>
+                É importante observar que, se você deseja passar dados para a nova tela ou retornar dados
+                da nova tela para a tela anterior, o Flutter fornece mecanismos adicionais, como
+                argumentos de rota e retornos de tela. Esses recursos podem ser usados em conjunto com
+                os métodos de navegação mencionados acima.
+              </p>
             </span>
             </div>
           </div>
@@ -114,7 +129,7 @@
   <div class="section">
     <h4>Gerenciamento de estado em um aplicativo Flutter</h4>
     <div class="row">
-      <div class="col s6"><span class="flow-text"> </span>
+      <div class="col s12"><span class="flow-text"></span>
         <p>
           No desenvolvimento de aplicativos Flutter, o gerenciamento de estado é uma parte
           fundamental para manter a consistência e a sincronização dos dados entre os diferentes
@@ -123,30 +138,33 @@
           entre outras. Além disso, o próprio Flutter possui um mecanismo interno chamado
           "gerenciamento de estado local" que permite controlar o estado em um único widget.
         </p>
-        <p>
+        <div class="col s3">
           <b>Gerenciamento de estado local (Stateful Widgets) </b>: Use widgets stateful para controlar o
           estado dentro de um único widget. É adequado para aplicativos menores ou com requisitos
           de estado simples.
-        </p>
-        <p>
+        </div>
+        <div class="col s3">
           <b>Provider:</b> Uma biblioteca popular que permite compartilhar estado eficientemente entre
           widgets, seguindo o conceito de Injeção de Dependência. É útil para atualizar dados de
           forma reativa.
-        </p>
-        <p>
+        </div>
+        <div class="col s3">
           <b>MobX:</b> Uma biblioteca poderosa que usa observáveis e reações para rastrear dependências
           entre os dados e atualizar automaticamente a interface do usuário. É útil para gerenciar
           estados complexos ou reativos.
-        </p>
-        <p>
+        </div>
+        <div class="col s3">
           <b>Redux:</b> Uma arquitetura de gerenciamento de estado que usa um store centralizado para
           armazenar todo o estado do aplicativo e implementar um fluxo unidirecional para atualizar e
           recuperar dados, adequado para aplicativos com grande quantidade de estado
           compartilhado.
-        </p>
+        </div>
+        <br>
         <p>
           Essas são algumas das opções disponíveis, e a escolha depende do tamanho,
-          complexidade e necessidades do seu aplicativo. É recomendável experimentar diferentes
+          complexidade e necessidades do seu aplicativo.
+          <br>
+          É recomendável experimentar diferentes
           abordagens para encontrar a que melhor se adapte ao seu projeto.
         </p>
       </div>
@@ -154,9 +172,43 @@
   </div>
   <div class="divider"></div>
   <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
+    <h4>Uso de widgets para gerenciamento de estado:</h4>
+    <div class="row">
+      <div class="col s6">
+        <Span>
+          <p>No Flutter, os widgets são a principal forma de gerenciar o estado dentro da hierarquia da
+          interface do usuário. Existem alguns tipos de widgets que você pode usar para lidar com o
+          gerenciamento de estado em seu aplicativo abaixo.
+          </p>
+        </Span>
+      </div>
+    </div>
   </div>
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">StatelessWidget</div>
+      <div class="collapsible-body">
+        <span>
+          Stateless Widget: Um widget "stateless" é imutável, o que significa que ele não
+          possui estado interno mutável. Ele é construído apenas com base nos parâmetros
+          fornecidos. Ao atualizar o estado, um novo widget stateless é construído para refletir
+          as alterações. É adequado para componentes estáticos que não precisam atualizar
+          seu estado.
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header">Stateful Widget</div>
+      <div class="collapsible-body">
+        
+      </div>
+    </li>
+      <div class="collapsible-header">InheritedWidget</div>
+      <div class="collapsible-body">
+        
+      </div>
+    </li>
+  </ul>
   <!--Nav Bar-->
 
   <!--Nav Bar-->
