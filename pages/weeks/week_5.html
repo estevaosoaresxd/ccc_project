@@ -54,55 +54,56 @@
     <ul class="collapsible">
       <li>
         <div class="collapsible-header">Widget Navigator</div>
-        <div class="collapsible-body"><span> O Flutter fornece o widget Navigator para gerenciar a pilha de telas (ou rotas) em um
-          aplicativo. Você pode usar o Navigator para empilhar uma nova tela na parte superior da
-          pilha, empurrando-a para a frente, ou para remover uma tela da pilha, empurrando-a para
-          trás.
-          <div class="row">
-            Para navegar para uma nova tela usando o Navigator, você normalmente precisa executar
-            as seguintes etapas:
-          </div>
-          <div class="row">
-            <p>● Importe o pacote do Flutter:</p>
-            <img src="../../src/images/semana05-img01.png">
-            <br>
-            <p>● Crie uma função para lidar com a navegação:</p>
-            <img src="../../src/images/semana05-img02.png">
-            <br>
-            <p>● Chame a função de navegação em resposta a um evento, como um botão pressionado:</p>
-            <img src="../../src/images/semana05-img03.png">
-            <br>
-            <p>
-              No exemplo acima, NewScreen() representa a tela para a qual você deseja navegar. Ao
-              chamar Navigator.push, você está adicionando uma nova rota à pilha e a tela será
-              empurrada para a frente.
-            </p>
-          </div>
+        <div class="collapsible-body"><span> O Flutter fornece o widget Navigator para gerenciar a pilha de telas (ou
+            rotas) em um
+            aplicativo. Você pode usar o Navigator para empilhar uma nova tela na parte superior da
+            pilha, empurrando-a para a frente, ou para remover uma tela da pilha, empurrando-a para
+            trás.
+            <div class="row">
+              Para navegar para uma nova tela usando o Navigator, você normalmente precisa executar
+              as seguintes etapas:
+            </div>
+            <div class="row">
+              <p>● Importe o pacote do Flutter:</p>
+              <img src="../../src/images/semana05-img01.png">
+              <br>
+              <p>● Crie uma função para lidar com a navegação:</p>
+              <img src="../../src/images/semana05-img02.png">
+              <br>
+              <p>● Chame a função de navegação em resposta a um evento, como um botão pressionado:</p>
+              <img src="../../src/images/semana05-img03.png">
+              <br>
+              <p>
+                No exemplo acima, NewScreen() representa a tela para a qual você deseja navegar. Ao
+                chamar Navigator.push, você está adicionando uma nova rota à pilha e a tela será
+                empurrada para a frente.
+              </p>
+            </div>
         </div>
       </li>
       <li>
         <div class="collapsible-header">Rotas nomeadas</div>
         <div class="collapsible-body">
           <div class="row">
-            <div class="col s6"><span> 
-              <p>
-                O uso de rotas nomeadas fornece uma maneira mais estruturada de navegar entre telas,
-                permitindo que você defina um nome para cada rota e navegue para ela usando esse nome.
-                Isso torna o código mais organizado e facilita a manutenção.
-              </p>
-              <p>● Declare as rotas nomeadas no método MaterialApp ou CupertinoApp:</p>
-              <img src="../../src/images/semana05-img04.png">
-              <br>
-              <p>● Navegue para uma nova tela usando o nome da rota:</p>
-              <img src="../../src/images/semana05-img05.png">
-              <br>
-              <p>
-                É importante observar que, se você deseja passar dados para a nova tela ou retornar dados
-                da nova tela para a tela anterior, o Flutter fornece mecanismos adicionais, como
-                argumentos de rota e retornos de tela. Esses recursos podem ser usados em conjunto com
-                os métodos de navegação mencionados acima.
-              </p>
-            </span>
+            <div class="col s6"><span>
+                <p>
+                  O uso de rotas nomeadas fornece uma maneira mais estruturada de navegar entre telas,
+                  permitindo que você defina um nome para cada rota e navegue para ela usando esse nome.
+                  Isso torna o código mais organizado e facilita a manutenção.
+                </p>
+                <p>● Declare as rotas nomeadas no método MaterialApp ou CupertinoApp:</p>
+                <img src="../../src/images/semana05-img04.png">
+                <br>
+                <p>● Navegue para uma nova tela usando o nome da rota:</p>
+                <img src="../../src/images/semana05-img05.png">
+                <br>
+                <p>
+                  É importante observar que, se você deseja passar dados para a nova tela ou retornar dados
+                  da nova tela para a tela anterior, o Flutter fornece mecanismos adicionais, como
+                  argumentos de rota e retornos de tela. Esses recursos podem ser usados em conjunto com
+                  os métodos de navegação mencionados acima.
+                </p>
+              </span>
             </div>
           </div>
         </div>
@@ -204,7 +205,7 @@
             atualizado ao longo do tempo. Ele mantém o estado em uma classe separada
             chamada 'State', que é vinculada ao widget e gerencia as atualizações de estado.
             Ao chamar 'setState()', o Flutter reconstruirá o widget com base nas alterações do
-            estado interno.            
+            estado interno.
           </p>
           <p>Exemplo:</p>
           <img src="../../src/images/semana05-img07.png">
@@ -221,12 +222,12 @@
             compartilhar dados entre widgets descendentes de forma eficiente. Ele define um
             valor que pode ser acessado por qualquer widget descendente. Quando o valor é
             atualizado, os widgets descendentes que dependem dele são reconstruídos
-            automaticamente.         
+            automaticamente.
           </p>
           <p>Exemplo:</p>
           <img src="../../src/images/semana05-img08.png">
           <br>
-        </span>        
+        </span>
       </div>
     </li>
   </ul>
@@ -263,7 +264,7 @@
   <footer class="page-footer blue lighten-2">
     <div class="container ">
       <div class="row">
-        <div class="col l5 s12">
+        <div class="col l8 s12">
           <h5 class="white-text"><b>Venha aprender Flutter com a UTFPR !</b></h5>
           <p class="grey-text text-lighten-4">As aplicações móveis estão em
             constante crescimento e se tornaram
@@ -272,29 +273,8 @@
           <p class="grey-text text-lighten-4">Se você tem interesse em aprender fluttter passo a passo, é só
             seguir nosso cronograma explicativo do zero ao mestre !</p>
         </div>
-        <div class="col l3 offset-l1 s4">
-          <h5 class="white-text">Tópicos</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvimento de Aplicações móveis</a>
-            </li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Semana 5-8</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_5.html">Semana 05</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_6.html">Semana 06</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_7.html">Semana 07</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_8.html">Semana 08</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-
-
     <div class="footer-copyright">
       <div class="container">
         © 2023 <b>Flutter-UTFPR</b> Copyright

@@ -66,7 +66,7 @@
                 widgets. Alguns exemplos desses widgets são AnimatedContainer, AnimatedOpacity,
                 AnimatedPositioned, AnimatedBuilder, entre outros. Esses widgets permitem animar
                 propriedades como tamanho, opacidade, posição e muito mais. Eles são fáceis de
-                usar e não requerem muito código adicional.                  
+                usar e não requerem muito código adicional.
               </p>
             </div>
           </span>
@@ -82,7 +82,7 @@
                 animar a transição entre dois estados de interface do usuário. O mais conhecido é o
                 AnimatedSwitcher, que permite animar a troca suave de um widget para outro.
                 Outros widgets de transição incluem Hero (para animações entre duas rotas) e
-                SlideTransition (para animações de deslize).         
+                SlideTransition (para animações de deslize).
               </p>
             </div>
           </span>
@@ -99,7 +99,7 @@
                 de tempo da animação. A classe AnimationController é frequentemente usada em
                 conjunto com Animation para controlar a animação. Você pode aplicar animações
                 interpoladas, adicionar curvas de interpolação personalizadas e ouvir eventos
-                durante a animação usando AnimationController e Animation.                   
+                durante a animação usando AnimationController e Animation.
               </p>
             </div>
           </span>
@@ -115,7 +115,7 @@
                 interpolação a uma animação. Ela permite que você especifique uma curva de
                 animação personalizada, como uma curva elástica, uma curva de amortecimento ou
                 qualquer outra curva desejada. Isso pode ajudar a dar uma sensação mais natural e
-                suave às animações.                                  
+                suave às animações.
               </p>
             </div>
           </span>
@@ -131,12 +131,12 @@
                 estado Provider, você pode combinar <b>Animation</b> e <b>ChangeNotifier</b> para criar
                 animações reativas. O <b>ChangeNotifier</b> pode emitir notificações de mudança de
                 estado e atualizar as animações correspondentes. Isso permite criar animações que
-                respondem a alterações dinâmicas de estado em seu aplicativo.                             
+                respondem a alterações dinâmicas de estado em seu aplicativo.
               </p>
             </div>
           </span>
         </div>
-      </li>      
+      </li>
     </ul>
     <div class="row">
       <div class="col s6">
@@ -150,7 +150,7 @@
           Independentemente da abordagem escolhida, é importante lembrar de otimizar as
           animações em Flutter para garantir um desempenho suave. Isso inclui o uso adequado de
           setState, AnimatedBuilder, Tweens e evitar atualizações desnecessárias de widgets durante
-          as animações.      
+          as animações.
         </p>
         <p>
           Explorar a documentação oficial do Flutter e procurar exemplos e tutoriais em animações
@@ -170,36 +170,36 @@
           reutilizáveis e personalizados para construir interfaces de usuário complexas.
         </p>
         <p>Exemplificando:</p>
-          <ul>
-            <li>
-              <p>
-                1. Crie uma nova classe que herde de StatelessWidget ou StatefulWidget. A escolha
-                entre essas duas classes depende se o seu widget precisará gerenciar um estado
-                interno mutável.                
-              </p>
-              <img src="../../src/images/semana07-img01.png">
-              <p> 
-                2. Dentro do método build, retorne um widget que representa a aparência e o layout do
-                seu widget personalizado. Pode ser um widget de layout, como Container, Column
-                ou Row, ou qualquer outro widget específico que você precise.                
-              </p>
-              <p>
-                3. Se necessário, você pode definir propriedades personalizadas para o seu widget,
-                permitindo que os usuários o personalizem e forneçam dados. Para fazer isso,
-                adicione parâmetros ao construtor da sua classe de widget e use esses valores
-                dentro do método build.
-              </p>
-              <img src="../../src/images/semana07-img02.png">
-              <br>
-              <p>
-                4. Use o seu widget personalizado em qualquer lugar do seu aplicativo Flutter. Basta
-                instanciar a classe do seu widget, fornecendo os valores necessários e
-                incorporando-o à árvore de widgets do Flutter.
-              </p>
-              <img src="../../src/images/semana07-img03.png">
-              <br>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <p>
+              1. Crie uma nova classe que herde de StatelessWidget ou StatefulWidget. A escolha
+              entre essas duas classes depende se o seu widget precisará gerenciar um estado
+              interno mutável.
+            </p>
+            <img src="../../src/images/semana07-img01.png">
+            <p>
+              2. Dentro do método build, retorne um widget que representa a aparência e o layout do
+              seu widget personalizado. Pode ser um widget de layout, como Container, Column
+              ou Row, ou qualquer outro widget específico que você precise.
+            </p>
+            <p>
+              3. Se necessário, você pode definir propriedades personalizadas para o seu widget,
+              permitindo que os usuários o personalizem e forneçam dados. Para fazer isso,
+              adicione parâmetros ao construtor da sua classe de widget e use esses valores
+              dentro do método build.
+            </p>
+            <img src="../../src/images/semana07-img02.png">
+            <br>
+            <p>
+              4. Use o seu widget personalizado em qualquer lugar do seu aplicativo Flutter. Basta
+              instanciar a classe do seu widget, fornecendo os valores necessários e
+              incorporando-o à árvore de widgets do Flutter.
+            </p>
+            <img src="../../src/images/semana07-img03.png">
+            <br>
+          </li>
+        </ul>
         <p>
           Essas são apenas as etapas básicas para criar um widget personalizado em Flutter. Você
           pode expandir a funcionalidade do seu widget personalizado adicionando mais
@@ -218,7 +218,7 @@
             Para acessar recursos do dispositivo, como câmera e geolocalização em Flutter, você pode
             utilizar plugins específicos que fornecem interfaces para interagir com esses recursos
             nativos. O Flutter possui uma ampla variedade de plugins disponíveis na comunidade que
-            facilitam o acesso aos recursos do dispositivo. 
+            facilitam o acesso aos recursos do dispositivo.
           </p>
           <p>
             Segue métodos de utilização de plugins para câmera e geolocalização:
@@ -261,7 +261,7 @@
               ● 'location': Este plugin também permite obter a localização atual do dispositivo e
               fornece recursos para rastrear as mudanças de localização. Além disso, oferece
               suporte a recursos avançados, como geocodificação reversa e estimativa de
-              distância.              
+              distância.
             </p>
           </div>
         </span>
@@ -271,36 +271,36 @@
   <div class="row">
     <div class="col s6">
       <p>
-        Para usar estes plugins, siga as etapas abaixo: 
+        Para usar estes plugins, siga as etapas abaixo:
       </p>
-        <ul>
-          <li>
-            <p>
-              1. Adicione a dependência do plugin ao arquivo <b>pubspec.yaml pubspec.yaml</b> do seu projeto:              
-            </p>
-            <img src="../../src/images/semana07-img04.png">
-            <p>Substitua '^x.x.x' pela versão mais recente do plugin que você deseja utilizar.</p>
-            <p> 
-              2. Execute o comando flutter '<b>pub get</b>' no terminal para baixar as dependências
-              atualizadas.                             
-            </p>
-            <p>
-              3. Importe o pacote do plugin no arquivo Dart onde você deseja utilizar os recursos:
-            </p>
-            <img src="../../src/images/semana07-img05.png">
-            <br>
-            <p>
-              4. Siga a documentação do plugin específico para aprender como usar as classes,
-              métodos e eventos disponibilizados pelo plugin. Cada plugin tem sua própria API e
-              conjunto de instruções para usar os recursos do dispositivo.
-            </p>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <p>
+            1. Adicione a dependência do plugin ao arquivo <b>pubspec.yaml pubspec.yaml</b> do seu projeto:
+          </p>
+          <img src="../../src/images/semana07-img04.png">
+          <p>Substitua '^x.x.x' pela versão mais recente do plugin que você deseja utilizar.</p>
+          <p>
+            2. Execute o comando flutter '<b>pub get</b>' no terminal para baixar as dependências
+            atualizadas.
+          </p>
+          <p>
+            3. Importe o pacote do plugin no arquivo Dart onde você deseja utilizar os recursos:
+          </p>
+          <img src="../../src/images/semana07-img05.png">
+          <br>
+          <p>
+            4. Siga a documentação do plugin específico para aprender como usar as classes,
+            métodos e eventos disponibilizados pelo plugin. Cada plugin tem sua própria API e
+            conjunto de instruções para usar os recursos do dispositivo.
+          </p>
+        </li>
+      </ul>
       <p>
         É importante observar que diferentes plugins podem ter requisitos específicos, como
         configurações no arquivo <b>AndroidManifest.xml</b> ou <b>Info.plist</b>, dependendo da plataforma.
         Verifique a documentação do plugin para obter instruções detalhadas sobre essas
-        configurações específicas. 
+        configurações específicas.
       </p>
     </div>
   </div>
@@ -315,20 +315,20 @@
         </p>
         <div class="col s4">
           <p>
-            ●  <b>Testes Unitários:</b> Verifique se unidades individuais de código estão funcionando
+            ● <b>Testes Unitários:</b> Verifique se unidades individuais de código estão funcionando
             corretamente.
           </p>
         </div>
         <div class="col s4">
           <p>
-            ●  <b>Testes de Widget:</b> Testam a interação e o comportamento de widgets individuais ou
-            grupos pequenos.            
+            ● <b>Testes de Widget:</b> Testam a interação e o comportamento de widgets individuais ou
+            grupos pequenos.
           </p>
         </div>
         <div class="col s4">
           <p>
-            ●  <b>Testes de Integração:</b> Testam a interação e o comportamento de vários
-            componentes do aplicativo trabalhando juntos.            
+            ● <b>Testes de Integração:</b> Testam a interação e o comportamento de vários
+            componentes do aplicativo trabalhando juntos.
           </p>
         </div>
         <p>
@@ -345,7 +345,7 @@
   <footer class="page-footer blue lighten-2">
     <div class="container ">
       <div class="row">
-        <div class="col l5 s12">
+        <div class="col l8 s12">
           <h5 class="white-text"><b>Venha aprender Flutter com a UTFPR !</b></h5>
           <p class="grey-text text-lighten-4">As aplicações móveis estão em
             constante crescimento e se tornaram
@@ -354,29 +354,8 @@
           <p class="grey-text text-lighten-4">Se você tem interesse em aprender fluttter passo a passo, é só
             seguir nosso cronograma explicativo do zero ao mestre !</p>
         </div>
-        <div class="col l3 offset-l1 s4">
-          <h5 class="white-text">Tópicos</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvimento de Aplicações móveis</a>
-            </li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Semana 5-8</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_5.html">Semana 05</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_6.html">Semana 06</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_7.html">Semana 07</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_8.html">Semana 08</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-
-
     <div class="footer-copyright">
       <div class="container">
         © 2023 <b>Flutter-UTFPR</b> Copyright
