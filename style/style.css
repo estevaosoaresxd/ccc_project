@@ -47,3 +47,15 @@
 .tabs li.tab a span {
     margin-right: 5px;
 }
+
+.height-title {
+    height: 100px;
+}
+
+.height-content {
+    height: 100px;
+}
+
+.card-content {
+    height: 250px;
+}
