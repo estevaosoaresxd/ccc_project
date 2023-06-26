@@ -33,3 +33,17 @@
 .mt-40 {
     margin-top: 40px;
 }
+
+.tabs li.tab {
+    display: flex;
+    align-items: center;
+}
+
+.tabs li.tab a {
+    display: flex;
+    align-items: center;
+}
+
+.tabs li.tab a span {
+    margin-right: 5px;
+}
