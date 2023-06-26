@@ -44,80 +44,218 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
+  <h1>Widgets em Flutter</h1>
+
+  <!-- Introdução -->
+
   <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
+
     <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
-        </p>
-      </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
+      <div class="col s12"><span class="flow-text"></span>
+        <br> ● Neste tópico, veremos widgets em flutter, para que servem e como usá-los.
         </p>
       </div>
     </div>
-    <ul class="collapsible">
-      <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Animações Implícitas</div>
-        <div class="collapsible-body">
-          <div class="row">
 
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
-            <div class="col s6">
-              <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
-              </div>
-            </div>
-          </div>
+    <!-- Introdução -->
+
+    <!-- O que são Widgets e como funcionam em Flutter -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">O que são Widgets e como funcionam em Flutter
         </div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>O que são Widgets</b><span><br>
+              <br>● Widgets são os blocos de construção básicos de uma interface de usuário em Flutter.
+              Tudo em Flutter é um widget, incluindo elementos visuais, layouts, estilos e até mesmo o aplicativo em
+              si.
+              <br>● Os widgets são declarativos e reativos, o que significa que a interface de usuário é atualizada
+              automaticamente sempre que ocorrem mudanças nos widgets.
+            </span></div>
+
+          <div class="col s6"><b>Widgets Básicos</b><span><br>
+              <br>● Container: Um widget versátil usado para criar layouts, aplicar margens, preenchimentos e decorações
+              aos elementos.
+              <br>● Row:Um widget que organiza seus filhos horizontalmente em uma linha.
+              <br>● Column:Um widget que organiza seus filhos verticalmente em uma coluna.
+              <br>● Text:Um widget usado para exibir texto com estilo.
+              <br>● Image:Um widget usado para exibir imagens em um aplicativo Flutter.
+              <br>
+              <br>E muitos outros widgets disponíveis no Flutter para diferentes finalidades.
+
+            </span></div>
+
+          <div class="col s6"><b>Composição de widgets para criar layouts</b><span><br>
+              <br>● Em Flutter, os layouts são criados pela composição de vários widgets.
+              <br>● Os widgets são aninhados uns dentro dos outros para criar a hierarquia visual do aplicativo.
+              <br>● A composição flexível de widgets permite a criação de layouts complexos e personalizados
+            </span></div>
+
+          <div class="row"></div>
+
+          <div class="col s6"><b>Exemplo de composição de widgets</b><span><br>
+              <br>● O código cria um Container contendo um Row com dois filhos: um Icon representando uma estrela e um
+              Text exibindo a mensagem "Avaliação: 4.5". O Row organiza esses dois filhos em uma linha horizontal
+              dentro
+              do Container.
+            </span></div>
+
+          <div class="col s12"><span><br><br>
+              <div class="card-image">
+                <img src="../../src/images/Exemplo_Widget.png" width="40%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
       </li>
     </ul>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
-  </div>
-  <!--Nav Bar-->
 
-  <!--Nav Bar-->
+    <!-- O que são Widgets e como funcionam em Flutter -->
 
+    <!-- Método Construtor -->
 
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Método Construtor
+        </div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>O que o Metódo Construtor</b><span><br>
+              <br>● Um método construtor, como o próprio nome já diz, é responsável pela criação do objeto daquela
+              classe, iniciando com valores seus atributos ou realizando outras funções que possam vir a ser
+              necessárias.
+              <br>● Em Flutter, classes também têm construtores que permitem personalizar a criação de objetos
+            </span></div>
+
+          <div class="row"></div>
+
+          <div class="col s6"><b>Construtor Padrão</b><span><br>
+              <br>● É fornecido automaticamente pelo Flutter se nenhum construtor personalizado for definido
+              necessárias.
+            </span></div>
+
+          <div class="col s6"><b>Construtor Nomeado</b><span><br>
+              <br>● Permite criar construtores adicionais com nomes diferentes para atender a necessidades específicas
+            </span></div>
+
+          <div class="col s6"><span><br><br>
+              <div class="card-image">
+                <img src="../../src/images/Construtor_Padrao.png" width="80%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
+          <div class="col s6"><span><br><br>
+              <div class="card-image">
+                <img src="../../src/images/Construtor_Nomeado.png" width="100%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
+          <div class="row"></div>
+
+          <div class="col s6"><b></b><span><br>
+              <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade.
+              <br> ● O construtor padrão é definido entre chaves {} e utiliza parâmetros nomeados para permitir a
+              atribuição dos valores dos atributos no momento da criação de uma instância da classe.
+              <br>● O construtor padrão define valores padrão vazios para os atributos caso nenhum valor seja fornecido.
+              <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo e atribuímos valores
+              aos atributos nome e idade. Em seguida, imprimimos os valores na saída.
+            </span></div>
+
+          <div class="col s6"><b></b><span><br>
+              <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade. O construtor nomeado
+              ExemploClasse.nomeado é definido utilizando a sintaxe {} para parâmetros nomeados. Ele permite a
+              atribuição dos valores dos atributos no momento da criação de uma instância da classe.
+              <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo utilizando o
+              construtor
+              nomeado ExemploClasse.nomeado. Fornecemos os valores dos parâmetros nome e idade ao criar a instância.
+              <br>● Em seguida, imprimimos os valores dos atributos nome e idade na saída.
+
+            </span></div>
+      </li>
+    </ul>
+
+    <!-- Método Construtor -->
+
+    <!-- Gestão de eventos em widgets -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Gestão de eventos em widgets
+        </div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>Gestão de eventos em widgets</b><span><br>
+              <br>● Em Flutter, os widgets podem responder a eventos, como toques, gestos e interações do usuário.
+              <br>● Cada widget tem métodos específicos para lidar com eventos.
+              <br>● Alguns exemplos de eventos incluem onTap, onLongPress, onDoubleTap, entre outros.
+            </span></div>
+
+          <div class="row"></div>
+
+          <div class="col s6"><b>Exemplo de Gestão de Eventos</b><span><br>
+              <br><b>1- </b>Importamos as bibliotecas necessárias.
+              <br>
+              <br><b>2- </b>Definimos uma classe MyApp que é o ponto de entrada do aplicativo.
+              <br>
+              <br><b>3- </b>MyApp retorna um MaterialApp que configura o aplicativo com um título e a página inicial.
+              <br>
+              <br><b>4- </b>A página inicial é definida como um Scaffold com um AppBar e um body centralizado.
+              <br>
+              <br><b>5- </b>No corpo (body), temos um único ElevatedButton com um texto "Clique aqui".
+              <br>
+              <br><b>6- </b>Quando o botão é clicado (onPressed), uma função anônima é chamada para exibir a mensagem
+              "Botão clicado!" no console.
+            </span></div>
+
+          <div class="col s6"><span><br><br>
+              <div class="card-image">
+                <img src="../../src/images/Gestao_Eventos.png" width="60%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
+      </li>
+    </ul>
+    <!-- Gestão de eventos em widgets -->
+  </div>
 
   <!--Footer-->
-  <footer class="page-footer">
-    <div class="container">
+
+  <footer class="page-footer blue lighten-2">
+    <div class="container ">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <div class="col l5 s12">
+          <h5 class="white-text"><b>Venha aprender Flutter com a UTFPR !</b></h5>
+          <p class="grey-text text-lighten-4">As aplicações móveis estão em
+            constante crescimento e se tornaram
+            uma parte essencial da nossa vida
+            cotidiana.</p>
+          <p class="grey-text text-lighten-4">Se você tem interesse em aprender fluttter passo a passo, é só
+            seguir nosso cronograma explicativo do zero ao mestre !</p>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+        <div class="col l3 offset-l1 s4">
+          <h5 class="white-text">Tópicos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvimento de Aplicações móveis</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Semana 5-8</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -131,16 +269,15 @@
 
     <div class="footer-copyright">
       <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2023 <b>Flutter-UTFPR</b> Copyright
       </div>
     </div>
   </footer>
 
   <!--Footer-->
 
-
   <script src="../../javascript/materialize.js"></script>
+
 </body>
 
 </html>
