@@ -52,33 +52,33 @@
           de armazenamento de dados a seguir:
         </p>
         <div class="col 9">
-        <ul>
-          <li>
-            ● <b>Shared Preferences:</b> O Shared Preferences é uma forma simples e leve de
-            armazenar dados chave-valor. É ideal para armazenar pequenas quantidades de
-            dados, como configurações de usuário, preferências ou informações de
-            autenticação. Os dados são persistidos localmente e podem ser acessados
-            rapidamente. No entanto, não é adequado para armazenar grandes volumes de
-            dados estruturados.
-          </li>
-          <li>
-            <br>
-            ● <b>Arquivos Locais (File System):</b> O Flutter oferece suporte ao acesso ao sistema de
-            arquivos do dispositivo, permitindo que você armazene e recupere arquivos no
-            armazenamento local. Isso é útil para armazenar dados estruturados, como arquivos
-            de banco de dados SQLite, arquivos JSON ou qualquer outro tipo de arquivo. Você
-            pode usar a biblioteca path_provider para obter o caminho adequado para
-            armazenamento local em diferentes plataformas
-          </li>
-          <li>
-            <br>
-            ● <b>Banco de Dados SQLite:</b>  O SQLite é um banco de dados relacional leve e embutido
-            que pode ser usado para armazenar dados estruturados em um aplicativo Flutter.
-            Ele oferece recursos avançados, como consultas SQL e indexação de dados,
-            tornando-o adequado para aplicativos que exigem operações de banco de dados
-            mais complexas. A biblioteca sqflite é amplamente usada para interagir com o
-            SQLite em Flutter.            
-          </li>
+          <ul>
+            <li>
+              ● <b>Shared Preferences:</b> O Shared Preferences é uma forma simples e leve de
+              armazenar dados chave-valor. É ideal para armazenar pequenas quantidades de
+              dados, como configurações de usuário, preferências ou informações de
+              autenticação. Os dados são persistidos localmente e podem ser acessados
+              rapidamente. No entanto, não é adequado para armazenar grandes volumes de
+              dados estruturados.
+            </li>
+            <li>
+              <br>
+              ● <b>Arquivos Locais (File System):</b> O Flutter oferece suporte ao acesso ao sistema de
+              arquivos do dispositivo, permitindo que você armazene e recupere arquivos no
+              armazenamento local. Isso é útil para armazenar dados estruturados, como arquivos
+              de banco de dados SQLite, arquivos JSON ou qualquer outro tipo de arquivo. Você
+              pode usar a biblioteca path_provider para obter o caminho adequado para
+              armazenamento local em diferentes plataformas
+            </li>
+            <li>
+              <br>
+              ● <b>Banco de Dados SQLite:</b> O SQLite é um banco de dados relacional leve e embutido
+              que pode ser usado para armazenar dados estruturados em um aplicativo Flutter.
+              Ele oferece recursos avançados, como consultas SQL e indexação de dados,
+              tornando-o adequado para aplicativos que exigem operações de banco de dados
+              mais complexas. A biblioteca sqflite é amplamente usada para interagir com o
+              SQLite em Flutter.
+            </li>
             <br>
             ● <b>Armazenamento em Nuvem:</b> Se você precisa armazenar dados em um local
             centralizado e acessível em vários dispositivos, pode considerar o armazenamento
@@ -86,8 +86,8 @@
             o Cloud Firestore ou serviços de armazenamento de objetos, como o Amazon S3 ou
             o Google Cloud Storage. Esses serviços oferecem recursos de sincronização em
             tempo real e escalabilidade para aplicativos Flutter.
-          </li>                    
-        </ul>
+            </li>
+          </ul>
         </div>
         <p>
           Além dessas opções, também existem bibliotecas adicionais que fornecem soluções de
@@ -115,31 +115,31 @@
           biblioteca http.
         </p>
         <p>Exemplificando:</p>
-          <ul>
-            <li>
-              <p>
-                1. Certifique-se de ter adicionado a dependência http no arquivo pubspec.yaml do seu
-                projeto Flutter:
-              </p>
-              <img src="../../src/images/semana06-img01.png">
-              <p> 
-                2. Importe a biblioteca http no arquivo Dart onde você deseja realizar as chamadas de API:
-              </p>
-              <img src="../../src/images/semana06-img02.png">
-              <p>
-                3. Use a função http.get() para fazer uma chamada GET para a URL da API desejada.
-                Aqui está um exemplo básico que obtém dados de uma API e exibe a resposta no
-                console:
-              </p>
-              <img src="../../src/images/semana06-img03.png">
-              <br>
-              <p>
-                4. Você pode chamar a função fetchData() quando necessário para obter os dados da
-                API. Lembre-se de lidar adequadamente com os erros e exceções que possam
-                ocorrer durante a chamada de API.
-              </p>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <p>
+              1. Certifique-se de ter adicionado a dependência http no arquivo pubspec.yaml do seu
+              projeto Flutter:
+            </p>
+            <img src="../../src/images/semana06-img01.png">
+            <p>
+              2. Importe a biblioteca http no arquivo Dart onde você deseja realizar as chamadas de API:
+            </p>
+            <img src="../../src/images/semana06-img02.png">
+            <p>
+              3. Use a função http.get() para fazer uma chamada GET para a URL da API desejada.
+              Aqui está um exemplo básico que obtém dados de uma API e exibe a resposta no
+              console:
+            </p>
+            <img src="../../src/images/semana06-img03.png">
+            <br>
+            <p>
+              4. Você pode chamar a função fetchData() quando necessário para obter os dados da
+              API. Lembre-se de lidar adequadamente com os erros e exceções que possam
+              ocorrer durante a chamada de API.
+            </p>
+          </li>
+        </ul>
         <p>
           Este é apenas um exemplo básico de como realizar chamadas de API em Flutter usando a
           biblioteca http. É importante notar que existem outras bibliotecas e abordagens disponíveis
@@ -193,7 +193,7 @@
               É importante lidar com erros de conexão, como falhas na
               rede ou problemas de conectividade. Você pode envolver a chamada de API em um
               bloco try-catch para capturar exceções e fornecer uma mensagem de erro adequada
-              ao usuário.              
+              ao usuário.
             </p>
             <p>Exemplo:</p>
             <img src="../../src/images/semana06-img04.png">
@@ -209,12 +209,12 @@
             Quando ocorrer um erro durante a chamada
             de API, você pode exibir uma mensagem de erro relevante para o usuário. Isso pode
             ser feito por meio de um diálogo, um snackbar, um Toast ou qualquer outro
-            componente de interface do usuário adequado.       
+            componente de interface do usuário adequado.
           </p>
           <p>Exemplo:</p>
           <img src="../../src/images/semana06-img05.png">
           <br>
-        </span>        
+        </span>
       </div>
     </li>
     <li>
@@ -225,12 +225,12 @@
             Além dos erros de conexão, a API pode retornar
             erros específicos com informações úteis. Por exemplo, uma resposta com código de
             status 400 pode indicar que os dados da solicitação estão incorretos. Você pode
-            analisar a resposta da API e tratar esses erros específicos de acordo.  
+            analisar a resposta da API e tratar esses erros específicos de acordo.
           </p>
           <p>Exemplo:</p>
           <img src="../../src/images/semana06-img06.png">
           <br>
-        </span>        
+        </span>
       </div>
     </li>
     <li>
@@ -241,9 +241,9 @@
             Durante a chamada de API, é comum exibir
             um indicador de carregamento para informar ao usuário que a solicitação está em
             andamento. Isso pode ser feito usando um CircularProgressIndicator ou outro
-            componente visual adequado.               
+            componente visual adequado.
           </p>
-        </span>        
+        </span>
       </div>
     </li>
     <div class="row">
@@ -252,7 +252,7 @@
           Essas são apenas algumas práticas básicas para lidar com erros e fornecer feedback ao
           usuário durante chamadas de API em Flutter. Você pode adaptar essas práticas de acordo
           com os requisitos do seu aplicativo e a lógica específica das chamadas de API que está
-          implementando.      
+          implementando.
         </p>
       </div>
     </div>
@@ -264,7 +264,7 @@
   <footer class="page-footer blue lighten-2">
     <div class="container ">
       <div class="row">
-        <div class="col l5 s12">
+        <div class="col l8 s12">
           <h5 class="white-text"><b>Venha aprender Flutter com a UTFPR !</b></h5>
           <p class="grey-text text-lighten-4">As aplicações móveis estão em
             constante crescimento e se tornaram
@@ -273,29 +273,8 @@
           <p class="grey-text text-lighten-4">Se você tem interesse em aprender fluttter passo a passo, é só
             seguir nosso cronograma explicativo do zero ao mestre !</p>
         </div>
-        <div class="col l3 offset-l1 s4">
-          <h5 class="white-text">Tópicos</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvimento de Aplicações móveis</a>
-            </li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Semana 5-8</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_5.html">Semana 05</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_6.html">Semana 06</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_7.html">Semana 07</a></li>
-            <li><a class="grey-text text-lighten-3" href="/pages/weeks/week_8.html">Semana 08</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-
-
     <div class="footer-copyright">
       <div class="container">
         © 2023 <b>Flutter-UTFPR</b> Copyright
