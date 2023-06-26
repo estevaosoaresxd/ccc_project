@@ -47,49 +47,218 @@
   </nav>
   <!--Nav Bar-->
 
-  <div class="section">
-    <h4> Animações em Flutter</h4>
-    <div class="row">
-      <div class="col s10"><span class="flow-text"></span>
-        <p>
-          Flutter oferece suporte a animações poderosas e flexíveis para criar interfaces de usuário
-          fluidas e interativas. Existem várias maneiras de realizar animações em Flutter, desde
-          animações básicas até animações complexas e personalizadas.
-        </p>
-        <p> Segue as formas mais comuns para criar animações em Flutter:</p>
+  <div class="padding-30">
+    <div class="section">
+      <h4> Animações em Flutter</h4>
+      <div class="row">
+        <div class="col s10"><span class="flow-text"></span>
+          <p>
+            Flutter oferece suporte a animações poderosas e flexíveis para criar interfaces de usuário
+            fluidas e interativas. Existem várias maneiras de realizar animações em Flutter, desde
+            animações básicas até animações complexas e personalizadas.
+          </p>
+          <p> Segue as formas mais comuns para criar animações em Flutter:</p>
+        </div>
+      </div>
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header">Widgets de animação embutidos</div>
+          <div class="collapsible-body">
+            <span>
+              <div class="col s4">
+                <p>
+                  Flutter oferece uma variedade de <b>widgets de animação embutidos</b>
+                  que podem ser usados para animar propriedades de outros
+                  widgets. Alguns exemplos desses widgets são AnimatedContainer, AnimatedOpacity,
+                  AnimatedPositioned, AnimatedBuilder, entre outros. Esses widgets permitem animar
+                  propriedades como tamanho, opacidade, posição e muito mais. Eles são fáceis de
+                  usar e não requerem muito código adicional.
+                </p>
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header">Widgets de transição</div>
+          <div class="collapsible-body">
+            <span>
+              <div class="col s4">
+                <p>
+                  Flutter também fornece <b>widgets de transição</b> que permitem
+                  animar a transição entre dois estados de interface do usuário. O mais conhecido é o
+                  AnimatedSwitcher, que permite animar a troca suave de um widget para outro.
+                  Outros widgets de transição incluem Hero (para animações entre duas rotas) e
+                  SlideTransition (para animações de deslize).
+                </p>
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header">Animations</div>
+          <div class="collapsible-body">
+            <span>
+              <div class="col s4">
+                <p>
+                  A classe <b>Animation</b> é um conceito fundamental em Flutter para criar
+                  animações personalizadas. Ela define a propriedade que será animada e o intervalo
+                  de tempo da animação. A classe AnimationController é frequentemente usada em
+                  conjunto com Animation para controlar a animação. Você pode aplicar animações
+                  interpoladas, adicionar curvas de interpolação personalizadas e ouvir eventos
+                  durante a animação usando AnimationController e Animation.
+                </p>
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header">CurvedAnimation</div>
+          <div class="collapsible-body">
+            <span>
+              <div class="col s4">
+                <p>
+                  A classe <b>CurvedAnimation</b> é usada para aplicar curvas de
+                  interpolação a uma animação. Ela permite que você especifique uma curva de
+                  animação personalizada, como uma curva elástica, uma curva de amortecimento ou
+                  qualquer outra curva desejada. Isso pode ajudar a dar uma sensação mais natural e
+                  suave às animações.
+                </p>
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header">Animations com provider</div>
+          <div class="collapsible-body">
+            <span>
+              <div class="col s4">
+                <p>
+                  Se você estiver usando o padrão de gerenciamento de
+                  estado Provider, você pode combinar <b>Animation</b> e <b>ChangeNotifier</b> para criar
+                  animações reativas. O <b>ChangeNotifier</b> pode emitir notificações de mudança de
+                  estado e atualizar as animações correspondentes. Isso permite criar animações que
+                  respondem a alterações dinâmicas de estado em seu aplicativo.
+                </p>
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="row">
+        <div class="col s6">
+          <p>
+            Além dessas opções, existem bibliotecas de animação de terceiros disponíveis, como o
+            flare_flutter para animações vetoriais e o Rive (anteriormente conhecido como Flare) para
+            animações interativas. Essas bibliotecas oferecem recursos avançados e ferramentas para
+            criar animações complexas e personalizadas.
+          </p>
+          <p>
+            Independentemente da abordagem escolhida, é importante lembrar de otimizar as
+            animações em Flutter para garantir um desempenho suave. Isso inclui o uso adequado de
+            setState, AnimatedBuilder, Tweens e evitar atualizações desnecessárias de widgets durante
+            as animações.
+          </p>
+          <p>
+            Explorar a documentação oficial do Flutter e procurar exemplos e tutoriais em animações
+            em Flutter pode ser útil para obter mais informações e inspiração para suas animações
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h4>Criação de widgets personalizado</h4>
+      <div class="row">
+        <div class="col s10"><span class="flow-text"></span>
+          <p>
+            A criação de widgets personalizados em Flutter é uma das principais características da
+            estrutura de desenvolvimento de aplicativos. Permite que você crie componentes
+            reutilizáveis e personalizados para construir interfaces de usuário complexas.
+          </p>
+          <p>Exemplificando:</p>
+          <ul>
+            <li>
+              <p>
+                1. Crie uma nova classe que herde de StatelessWidget ou StatefulWidget. A escolha
+                entre essas duas classes depende se o seu widget precisará gerenciar um estado
+                interno mutável.
+              </p>
+              <img src="../../src/images/semana07-img01.png">
+              <p>
+                2. Dentro do método build, retorne um widget que representa a aparência e o layout do
+                seu widget personalizado. Pode ser um widget de layout, como Container, Column
+                ou Row, ou qualquer outro widget específico que você precise.
+              </p>
+              <p>
+                3. Se necessário, você pode definir propriedades personalizadas para o seu widget,
+                permitindo que os usuários o personalizem e forneçam dados. Para fazer isso,
+                adicione parâmetros ao construtor da sua classe de widget e use esses valores
+                dentro do método build.
+              </p>
+              <img src="../../src/images/semana07-img02.png">
+              <br>
+              <p>
+                4. Use o seu widget personalizado em qualquer lugar do seu aplicativo Flutter. Basta
+                instanciar a classe do seu widget, fornecendo os valores necessários e
+                incorporando-o à árvore de widgets do Flutter.
+              </p>
+              <img src="../../src/images/semana07-img03.png">
+              <br>
+            </li>
+          </ul>
+          <p>
+            Essas são apenas as etapas básicas para criar um widget personalizado em Flutter. Você
+            pode expandir a funcionalidade do seu widget personalizado adicionando mais
+            propriedades, métodos e interatividade, dependendo dos requisitos do seu aplicativo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h4>Uso de plugins para acesso a recursos do dispositivos</h4>
+      <div class="row">
+        <div class="col s6">
+          <Span>
+            <p>
+              Para acessar recursos do dispositivo, como câmera e geolocalização em Flutter, você pode
+              utilizar plugins específicos que fornecem interfaces para interagir com esses recursos
+              nativos. O Flutter possui uma ampla variedade de plugins disponíveis na comunidade que
+              facilitam o acesso aos recursos do dispositivo.
+            </p>
+            <p>
+              Segue métodos de utilização de plugins para câmera e geolocalização:
+            </p>
+          </Span>
+        </div>
       </div>
     </div>
     <ul class="collapsible">
+
       <li class="active">
-        <div class="collapsible-header">Widgets de animação embutidos</div>
+        <div class="collapsible-header"> Acesso à câmera</div>
         <div class="collapsible-body">
           <span>
             <div class="col s4">
               <p>
-                Flutter oferece uma variedade de <b>widgets de animação embutidos</b>
-                que podem ser usados para animar propriedades de outros
-                widgets. Alguns exemplos desses widgets são AnimatedContainer, AnimatedOpacity,
-                AnimatedPositioned, AnimatedBuilder, entre outros. Esses widgets permitem animar
-                propriedades como tamanho, opacidade, posição e muito mais. Eles são fáceis de
-                usar e não requerem muito código adicional.
+                ● 'camera': Este plugin permite capturar fotos e vídeos usando a câmera do
+                dispositivo. Ele fornece uma API fácil de usar para iniciar a câmera, tirar fotos,
+                gravar vídeos e muito mais.
               </p>
-            </div>
-          </span>
-        </div>
-      </li>
-    </ul>
-    <ul class="collapsible">
-      <li class="active">
-        <div class="collapsible-header">Widgets de transição</div>
-        <div class="collapsible-body">
-          <span>
-            <div class="col s4">
               <p>
-                Flutter também fornece <b>widgets de transição</b> que permitem
-                animar a transição entre dois estados de interface do usuário. O mais conhecido é o
-                AnimatedSwitcher, que permite animar a troca suave de um widget para outro.
-                Outros widgets de transição incluem Hero (para animações entre duas rotas) e
-                SlideTransition (para animações de deslize).
+                ● 'image_picker': Este plugin permite selecionar imagens da galeria do dispositivo ou
+                capturar uma foto usando a câmera. Ele oferece suporte a seleção de imagens e
+                vídeos.
               </p>
             </div>
           </span>
@@ -99,269 +268,104 @@
 
     <ul class="collapsible">
       <li class="active">
-        <div class="collapsible-header">Animations</div>
+        <div class="collapsible-header">Acesso à geolocalização</div>
         <div class="collapsible-body">
           <span>
             <div class="col s4">
               <p>
-                A classe <b>Animation</b> é um conceito fundamental em Flutter para criar
-                animações personalizadas. Ela define a propriedade que será animada e o intervalo
-                de tempo da animação. A classe AnimationController é frequentemente usada em
-                conjunto com Animation para controlar a animação. Você pode aplicar animações
-                interpoladas, adicionar curvas de interpolação personalizadas e ouvir eventos
-                durante a animação usando AnimationController e Animation.
+                ● 'geolocator': Este plugin permite obter a localização atual do dispositivo, incluindo
+                coordenadas de latitude e longitude, velocidade, altitude, entre outros. Ele oferece
+                recursos para rastrear as mudanças de localização em tempo real
+              </p>
+              <p>
+                ● 'location': Este plugin também permite obter a localização atual do dispositivo e
+                fornece recursos para rastrear as mudanças de localização. Além disso, oferece
+                suporte a recursos avançados, como geocodificação reversa e estimativa de
+                distância.
               </p>
             </div>
           </span>
         </div>
       </li>
     </ul>
-    <ul class="collapsible">
-      <li class="active">
-        <div class="collapsible-header">CurvedAnimation</div>
-        <div class="collapsible-body">
-          <span>
-            <div class="col s4">
-              <p>
-                A classe <b>CurvedAnimation</b> é usada para aplicar curvas de
-                interpolação a uma animação. Ela permite que você especifique uma curva de
-                animação personalizada, como uma curva elástica, uma curva de amortecimento ou
-                qualquer outra curva desejada. Isso pode ajudar a dar uma sensação mais natural e
-                suave às animações.
-              </p>
-            </div>
-          </span>
-        </div>
-      </li>
-    </ul>
-    <ul class="collapsible">
-      <li class="active">
-        <div class="collapsible-header">Animations com provider</div>
-        <div class="collapsible-body">
-          <span>
-            <div class="col s4">
-              <p>
-                Se você estiver usando o padrão de gerenciamento de
-                estado Provider, você pode combinar <b>Animation</b> e <b>ChangeNotifier</b> para criar
-                animações reativas. O <b>ChangeNotifier</b> pode emitir notificações de mudança de
-                estado e atualizar as animações correspondentes. Isso permite criar animações que
-                respondem a alterações dinâmicas de estado em seu aplicativo.
-              </p>
-            </div>
-          </span>
-        </div>
-      </li>
-    </ul>
+
+
 
     <div class="row">
       <div class="col s6">
         <p>
-          Além dessas opções, existem bibliotecas de animação de terceiros disponíveis, como o
-          flare_flutter para animações vetoriais e o Rive (anteriormente conhecido como Flare) para
-          animações interativas. Essas bibliotecas oferecem recursos avançados e ferramentas para
-          criar animações complexas e personalizadas.
+          Para usar estes plugins, siga as etapas abaixo:
         </p>
-        <p>
-          Independentemente da abordagem escolhida, é importante lembrar de otimizar as
-          animações em Flutter para garantir um desempenho suave. Isso inclui o uso adequado de
-          setState, AnimatedBuilder, Tweens e evitar atualizações desnecessárias de widgets durante
-          as animações.
-        </p>
-        <p>
-          Explorar a documentação oficial do Flutter e procurar exemplos e tutoriais em animações
-          em Flutter pode ser útil para obter mais informações e inspiração para suas animações
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h4>Criação de widgets personalizado</h4>
-    <div class="row">
-      <div class="col s10"><span class="flow-text"></span>
-        <p>
-          A criação de widgets personalizados em Flutter é uma das principais características da
-          estrutura de desenvolvimento de aplicativos. Permite que você crie componentes
-          reutilizáveis e personalizados para construir interfaces de usuário complexas.
-        </p>
-        <p>Exemplificando:</p>
         <ul>
           <li>
             <p>
-              1. Crie uma nova classe que herde de StatelessWidget ou StatefulWidget. A escolha
-              entre essas duas classes depende se o seu widget precisará gerenciar um estado
-              interno mutável.
+              1. Adicione a dependência do plugin ao arquivo <b>pubspec.yaml pubspec.yaml</b> do seu projeto:
             </p>
-            <img src="../../src/images/semana07-img01.png">
+            <img src="../../src/images/semana07-img04.png">
+            <p>Substitua '^x.x.x' pela versão mais recente do plugin que você deseja utilizar.</p>
             <p>
-              2. Dentro do método build, retorne um widget que representa a aparência e o layout do
-              seu widget personalizado. Pode ser um widget de layout, como Container, Column
-              ou Row, ou qualquer outro widget específico que você precise.
+              2. Execute o comando flutter '<b>pub get</b>' no terminal para baixar as dependências
+              atualizadas.
             </p>
             <p>
-              3. Se necessário, você pode definir propriedades personalizadas para o seu widget,
-              permitindo que os usuários o personalizem e forneçam dados. Para fazer isso,
-              adicione parâmetros ao construtor da sua classe de widget e use esses valores
-              dentro do método build.
+              3. Importe o pacote do plugin no arquivo Dart onde você deseja utilizar os recursos:
             </p>
-            <img src="../../src/images/semana07-img02.png">
+            <img src="../../src/images/semana07-img05.png">
             <br>
             <p>
-              4. Use o seu widget personalizado em qualquer lugar do seu aplicativo Flutter. Basta
-              instanciar a classe do seu widget, fornecendo os valores necessários e
-              incorporando-o à árvore de widgets do Flutter.
+              4. Siga a documentação do plugin específico para aprender como usar as classes,
+              métodos e eventos disponibilizados pelo plugin. Cada plugin tem sua própria API e
+              conjunto de instruções para usar os recursos do dispositivo.
             </p>
-            <img src="../../src/images/semana07-img03.png">
-            <br>
           </li>
         </ul>
         <p>
-          Essas são apenas as etapas básicas para criar um widget personalizado em Flutter. Você
-          pode expandir a funcionalidade do seu widget personalizado adicionando mais
-          propriedades, métodos e interatividade, dependendo dos requisitos do seu aplicativo.
+          É importante observar que diferentes plugins podem ter requisitos específicos, como
+          configurações no arquivo <b>AndroidManifest.xml</b> ou <b>Info.plist</b>, dependendo da plataforma.
+          Verifique a documentação do plugin para obter instruções detalhadas sobre essas
+          configurações específicas.
         </p>
       </div>
     </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h4>Uso de plugins para acesso a recursos do dispositivos</h4>
-    <div class="row">
-      <div class="col s6">
-        <Span>
+    <div class="divider"></div>
+    <div class="section">
+      <h4>Testes em Flutter</h4>
+      <div class="row">
+        <div class="col s9">
           <p>
-            Para acessar recursos do dispositivo, como câmera e geolocalização em Flutter, você pode
-            utilizar plugins específicos que fornecem interfaces para interagir com esses recursos
-            nativos. O Flutter possui uma ampla variedade de plugins disponíveis na comunidade que
-            facilitam o acesso aos recursos do dispositivo.
+            Em Flutter, você pode realizar testes para garantir a qualidade do seu aplicativo. Os
+            principais tipos de testes são:
           </p>
-          <p>
-            Segue métodos de utilização de plugins para câmera e geolocalização:
-          </p>
-        </Span>
-      </div>
-    </div>
-  </div>
-  <ul class="collapsible">
-
-    <li class="active">
-      <div class="collapsible-header"> Acesso à câmera</div>
-      <div class="collapsible-body">
-        <span>
           <div class="col s4">
             <p>
-              ● 'camera': Este plugin permite capturar fotos e vídeos usando a câmera do
-              dispositivo. Ele fornece uma API fácil de usar para iniciar a câmera, tirar fotos,
-              gravar vídeos e muito mais.
-            </p>
-            <p>
-              ● 'image_picker': Este plugin permite selecionar imagens da galeria do dispositivo ou
-              capturar uma foto usando a câmera. Ele oferece suporte a seleção de imagens e
-              vídeos.
+              ● <b>Testes Unitários:</b> Verifique se unidades individuais de código estão funcionando
+              corretamente.
             </p>
           </div>
-        </span>
-      </div>
-    </li>
-  </ul>
-
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Acesso à geolocalização</div>
-      <div class="collapsible-body">
-        <span>
           <div class="col s4">
             <p>
-              ● 'geolocator': Este plugin permite obter a localização atual do dispositivo, incluindo
-              coordenadas de latitude e longitude, velocidade, altitude, entre outros. Ele oferece
-              recursos para rastrear as mudanças de localização em tempo real
-            </p>
-            <p>
-              ● 'location': Este plugin também permite obter a localização atual do dispositivo e
-              fornece recursos para rastrear as mudanças de localização. Além disso, oferece
-              suporte a recursos avançados, como geocodificação reversa e estimativa de
-              distância.
+              ● <b>Testes de Widget:</b> Testam a interação e o comportamento de widgets individuais ou
+              grupos pequenos.
             </p>
           </div>
-        </span>
-      </div>
-    </li>
-  </ul>
-
-
-
-  <div class="row">
-    <div class="col s6">
-      <p>
-        Para usar estes plugins, siga as etapas abaixo:
-      </p>
-      <ul>
-        <li>
+          <div class="col s4">
+            <p>
+              ● <b>Testes de Integração:</b> Testam a interação e o comportamento de vários
+              componentes do aplicativo trabalhando juntos.
+            </p>
+          </div>
           <p>
-            1. Adicione a dependência do plugin ao arquivo <b>pubspec.yaml pubspec.yaml</b> do seu projeto:
-          </p>
-          <img src="../../src/images/semana07-img04.png">
-          <p>Substitua '^x.x.x' pela versão mais recente do plugin que você deseja utilizar.</p>
-          <p>
-            2. Execute o comando flutter '<b>pub get</b>' no terminal para baixar as dependências
-            atualizadas.
-          </p>
-          <p>
-            3. Importe o pacote do plugin no arquivo Dart onde você deseja utilizar os recursos:
-          </p>
-          <img src="../../src/images/semana07-img05.png">
-          <br>
-          <p>
-            4. Siga a documentação do plugin específico para aprender como usar as classes,
-            métodos e eventos disponibilizados pelo plugin. Cada plugin tem sua própria API e
-            conjunto de instruções para usar os recursos do dispositivo.
-          </p>
-        </li>
-      </ul>
-      <p>
-        É importante observar que diferentes plugins podem ter requisitos específicos, como
-        configurações no arquivo <b>AndroidManifest.xml</b> ou <b>Info.plist</b>, dependendo da plataforma.
-        Verifique a documentação do plugin para obter instruções detalhadas sobre essas
-        configurações específicas.
-      </p>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h4>Testes em Flutter</h4>
-    <div class="row">
-      <div class="col s9">
-        <p>
-          Em Flutter, você pode realizar testes para garantir a qualidade do seu aplicativo. Os
-          principais tipos de testes são:
-        </p>
-        <div class="col s4">
-          <p>
-            ● <b>Testes Unitários:</b> Verifique se unidades individuais de código estão funcionando
-            corretamente.
+            Você pode usar a biblioteca '<b>flutter_test</b>' para escrever testes em Flutter. Os testes podem
+            ser executados no terminal ou no ambiente de desenvolvimento integrado. É importante
+            escrever testes automatizados para garantir a estabilidade e a consistência do aplicativo
           </p>
         </div>
-        <div class="col s4">
-          <p>
-            ● <b>Testes de Widget:</b> Testam a interação e o comportamento de widgets individuais ou
-            grupos pequenos.
-          </p>
-        </div>
-        <div class="col s4">
-          <p>
-            ● <b>Testes de Integração:</b> Testam a interação e o comportamento de vários
-            componentes do aplicativo trabalhando juntos.
-          </p>
-        </div>
-        <p>
-          Você pode usar a biblioteca '<b>flutter_test</b>' para escrever testes em Flutter. Os testes podem
-          ser executados no terminal ou no ambiente de desenvolvimento integrado. É importante
-          escrever testes automatizados para garantir a estabilidade e a consistência do aplicativo
-        </p>
       </div>
     </div>
+    <!--Nav Bar-->
   </div>
-  <!--Nav Bar-->
+
+
 
   <!--Footer-->
   <footer class="page-footer blue lighten-2">

@@ -47,236 +47,240 @@
   </nav>
   <!--Nav Bar-->
 
-  <div class="section">
-    <h4> Introdução ao armazenamento de dados em Flutter</h4>
-    <div class="row">
-      <div class="col s10"><span class="flow-text"></span>
-        <p>O armazenamento de dados é uma parte essencial no desenvolvimento de aplicativos
-          Flutter. Existem várias opções disponíveis para armazenar dados em um aplicativo,
-          dependendo das necessidades específicas. VIntroduziremos algumas das principais opções
-          de armazenamento de dados a seguir:
-        </p>
-        <div class="col 9">
+  <div class="padding-30">
+    <div class="section">
+      <h4> Introdução ao armazenamento de dados em Flutter</h4>
+      <div class="row">
+        <div class="col s10"><span class="flow-text"></span>
+          <p>O armazenamento de dados é uma parte essencial no desenvolvimento de aplicativos
+            Flutter. Existem várias opções disponíveis para armazenar dados em um aplicativo,
+            dependendo das necessidades específicas. VIntroduziremos algumas das principais opções
+            de armazenamento de dados a seguir:
+          </p>
+          <div class="col 9">
+            <ul>
+              <li>
+                ● <b>Shared Preferences:</b> O Shared Preferences é uma forma simples e leve de
+                armazenar dados chave-valor. É ideal para armazenar pequenas quantidades de
+                dados, como configurações de usuário, preferências ou informações de
+                autenticação. Os dados são persistidos localmente e podem ser acessados
+                rapidamente. No entanto, não é adequado para armazenar grandes volumes de
+                dados estruturados.
+              </li>
+              <li>
+                <br>
+                ● <b>Arquivos Locais (File System):</b> O Flutter oferece suporte ao acesso ao sistema de
+                arquivos do dispositivo, permitindo que você armazene e recupere arquivos no
+                armazenamento local. Isso é útil para armazenar dados estruturados, como arquivos
+                de banco de dados SQLite, arquivos JSON ou qualquer outro tipo de arquivo. Você
+                pode usar a biblioteca path_provider para obter o caminho adequado para
+                armazenamento local em diferentes plataformas
+              </li>
+              <li>
+                <br>
+                ● <b>Banco de Dados SQLite:</b> O SQLite é um banco de dados relacional leve e embutido
+                que pode ser usado para armazenar dados estruturados em um aplicativo Flutter.
+                Ele oferece recursos avançados, como consultas SQL e indexação de dados,
+                tornando-o adequado para aplicativos que exigem operações de banco de dados
+                mais complexas. A biblioteca sqflite é amplamente usada para interagir com o
+                SQLite em Flutter.
+              </li>
+              <br>
+              ● <b>Armazenamento em Nuvem:</b> Se você precisa armazenar dados em um local
+              centralizado e acessível em vários dispositivos, pode considerar o armazenamento
+              em nuvem. Existem várias opções disponíveis, como o Firebase Realtime Database,
+              o Cloud Firestore ou serviços de armazenamento de objetos, como o Amazon S3 ou
+              o Google Cloud Storage. Esses serviços oferecem recursos de sincronização em
+              tempo real e escalabilidade para aplicativos Flutter.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Além dessas opções, também existem bibliotecas adicionais que fornecem soluções de
+            gerenciamento de estado e persistência, como o Hive, que é um banco de dados de
+            chave-valor rápido e fácil de usar, e o Moor, que é um gerador de código que facilita a
+            comunicação com bancos de dados SQLite.
+          </p>
+          <p>
+            A escolha do método de armazenamento de dados depende das necessidades específicas
+            do seu aplicativo, como o tamanho dos dados, a complexidade das operações de banco de
+            dados e os requisitos de sincronização de dados. É importante considerar a segurança, o
+            desempenho e a escalabilidade ao selecionar a opção de armazenamento mais adequada
+            para o seu aplicativo Flutter.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h4>Chamadas de API para obtenção de dados externos</h4>
+      <div class="row">
+        <div class="col s10"><span class="flow-text"></span>
+          <p>
+            Em Flutter, você pode realizar chamadas de API para obtenção de dados externos usando a
+            biblioteca http.
+          </p>
+          <p>Exemplificando:</p>
           <ul>
             <li>
-              ● <b>Shared Preferences:</b> O Shared Preferences é uma forma simples e leve de
-              armazenar dados chave-valor. É ideal para armazenar pequenas quantidades de
-              dados, como configurações de usuário, preferências ou informações de
-              autenticação. Os dados são persistidos localmente e podem ser acessados
-              rapidamente. No entanto, não é adequado para armazenar grandes volumes de
-              dados estruturados.
-            </li>
-            <li>
+              <p>
+                1. Certifique-se de ter adicionado a dependência http no arquivo pubspec.yaml do seu
+                projeto Flutter:
+              </p>
+              <img src="../../src/images/semana06-img01.png">
+              <p>
+                2. Importe a biblioteca http no arquivo Dart onde você deseja realizar as chamadas de API:
+              </p>
+              <img src="../../src/images/semana06-img02.png">
+              <p>
+                3. Use a função http.get() para fazer uma chamada GET para a URL da API desejada.
+                Aqui está um exemplo básico que obtém dados de uma API e exibe a resposta no
+                console:
+              </p>
+              <img src="../../src/images/semana06-img03.png">
               <br>
-              ● <b>Arquivos Locais (File System):</b> O Flutter oferece suporte ao acesso ao sistema de
-              arquivos do dispositivo, permitindo que você armazene e recupere arquivos no
-              armazenamento local. Isso é útil para armazenar dados estruturados, como arquivos
-              de banco de dados SQLite, arquivos JSON ou qualquer outro tipo de arquivo. Você
-              pode usar a biblioteca path_provider para obter o caminho adequado para
-              armazenamento local em diferentes plataformas
-            </li>
-            <li>
-              <br>
-              ● <b>Banco de Dados SQLite:</b> O SQLite é um banco de dados relacional leve e embutido
-              que pode ser usado para armazenar dados estruturados em um aplicativo Flutter.
-              Ele oferece recursos avançados, como consultas SQL e indexação de dados,
-              tornando-o adequado para aplicativos que exigem operações de banco de dados
-              mais complexas. A biblioteca sqflite é amplamente usada para interagir com o
-              SQLite em Flutter.
-            </li>
-            <br>
-            ● <b>Armazenamento em Nuvem:</b> Se você precisa armazenar dados em um local
-            centralizado e acessível em vários dispositivos, pode considerar o armazenamento
-            em nuvem. Existem várias opções disponíveis, como o Firebase Realtime Database,
-            o Cloud Firestore ou serviços de armazenamento de objetos, como o Amazon S3 ou
-            o Google Cloud Storage. Esses serviços oferecem recursos de sincronização em
-            tempo real e escalabilidade para aplicativos Flutter.
+              <p>
+                4. Você pode chamar a função fetchData() quando necessário para obter os dados da
+                API. Lembre-se de lidar adequadamente com os erros e exceções que possam
+                ocorrer durante a chamada de API.
+              </p>
             </li>
           </ul>
+          <p>
+            Este é apenas um exemplo básico de como realizar chamadas de API em Flutter usando a
+            biblioteca http. É importante notar que existem outras bibliotecas e abordagens disponíveis
+            para trabalhar com chamadas de API em Flutter, como o uso de pacotes como dio ou a
+            criação de classes e modelos personalizados para facilitar a serialização e desserialização
+            de dados. Recomenda-se consultar a documentação dessas bibliotecas e explorar
+            exemplos mais avançados para obter mais informações.
+          </p>
         </div>
-        <p>
-          Além dessas opções, também existem bibliotecas adicionais que fornecem soluções de
-          gerenciamento de estado e persistência, como o Hive, que é um banco de dados de
-          chave-valor rápido e fácil de usar, e o Moor, que é um gerador de código que facilita a
-          comunicação com bancos de dados SQLite.
-        </p>
-        <p>
-          A escolha do método de armazenamento de dados depende das necessidades específicas
-          do seu aplicativo, como o tamanho dos dados, a complexidade das operações de banco de
-          dados e os requisitos de sincronização de dados. É importante considerar a segurança, o
-          desempenho e a escalabilidade ao selecionar a opção de armazenamento mais adequada
-          para o seu aplicativo Flutter.
-        </p>
       </div>
     </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h4>Chamadas de API para obtenção de dados externos</h4>
-    <div class="row">
-      <div class="col s10"><span class="flow-text"></span>
-        <p>
-          Em Flutter, você pode realizar chamadas de API para obtenção de dados externos usando a
-          biblioteca http.
-        </p>
-        <p>Exemplificando:</p>
-        <ul>
-          <li>
+    <div class="divider"></div>
+    <div class="section">
+      <h4>Tratamento de erros e feedback ao usuário</h4>
+      <div class="row">
+        <div class="col s6">
+          <Span>
             <p>
-              1. Certifique-se de ter adicionado a dependência http no arquivo pubspec.yaml do seu
-              projeto Flutter:
+              No processo de chamadas de API em Flutter, é importante realizar o tratamento de erros e
+              fornecer feedback adequado ao usuário para garantir uma experiência de uso melhor.
             </p>
-            <img src="../../src/images/semana06-img01.png">
             <p>
-              2. Importe a biblioteca http no arquivo Dart onde você deseja realizar as chamadas de API:
+              Segue práticas comuns para lidar com erros e fornecer feedback ao usuário:
             </p>
-            <img src="../../src/images/semana06-img02.png">
-            <p>
-              3. Use a função http.get() para fazer uma chamada GET para a URL da API desejada.
-              Aqui está um exemplo básico que obtém dados de uma API e exibe a resposta no
-              console:
-            </p>
-            <img src="../../src/images/semana06-img03.png">
-            <br>
-            <p>
-              4. Você pode chamar a função fetchData() quando necessário para obter os dados da
-              API. Lembre-se de lidar adequadamente com os erros e exceções que possam
-              ocorrer durante a chamada de API.
-            </p>
-          </li>
-        </ul>
-        <p>
-          Este é apenas um exemplo básico de como realizar chamadas de API em Flutter usando a
-          biblioteca http. É importante notar que existem outras bibliotecas e abordagens disponíveis
-          para trabalhar com chamadas de API em Flutter, como o uso de pacotes como dio ou a
-          criação de classes e modelos personalizados para facilitar a serialização e desserialização
-          de dados. Recomenda-se consultar a documentação dessas bibliotecas e explorar
-          exemplos mais avançados para obter mais informações.
-        </p>
+          </Span>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h4>Tratamento de erros e feedback ao usuário</h4>
-    <div class="row">
-      <div class="col s6">
-        <Span>
-          <p>
-            No processo de chamadas de API em Flutter, é importante realizar o tratamento de erros e
-            fornecer feedback adequado ao usuário para garantir uma experiência de uso melhor.
-          </p>
-          <p>
-            Segue práticas comuns para lidar com erros e fornecer feedback ao usuário:
-          </p>
-        </Span>
-      </div>
-    </div>
-  </div>
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Verificar o código de status da resposta</div>
-      <div class="collapsible-body">
-        <span>
-          <div class="col s4">
-            <p>
-              Ao receber a resposta da chamada de API,
-              você pode verificar o código de status HTTP para determinar se a solicitação foi
-              bem-sucedida ou se ocorreu algum erro. <br>Os códigos de status comuns são 2xx para
-              sucesso, 4xx para erros do cliente e 5xx para erros do servidor.
-            </p>
-          </div>
-        </span>
-      </div>
-    </li>
-  </ul>
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header">Verificar o código de status da resposta</div>
+        <div class="collapsible-body">
+          <span>
+            <div class="col s4">
+              <p>
+                Ao receber a resposta da chamada de API,
+                você pode verificar o código de status HTTP para determinar se a solicitação foi
+                bem-sucedida ou se ocorreu algum erro. <br>Os códigos de status comuns são 2xx para
+                sucesso, 4xx para erros do cliente e 5xx para erros do servidor.
+              </p>
+            </div>
+          </span>
+        </div>
+      </li>
+    </ul>
 
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Tratar erros de conexão</div>
-      <div class="collapsible-body">
-        <span>
-          <div class="col s4">
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header">Tratar erros de conexão</div>
+        <div class="collapsible-body">
+          <span>
+            <div class="col s4">
+              <p>
+                É importante lidar com erros de conexão, como falhas na
+                rede ou problemas de conectividade. Você pode envolver a chamada de API em um
+                bloco try-catch para capturar exceções e fornecer uma mensagem de erro adequada
+                ao usuário.
+              </p>
+              <p>Exemplo:</p>
+              <img src="../../src/images/semana06-img04.png">
+            </div>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header">Exibir mensagens de erro ao usuário</div>
+        <div class="collapsible-body">
+          <span>
             <p>
-              É importante lidar com erros de conexão, como falhas na
-              rede ou problemas de conectividade. Você pode envolver a chamada de API em um
-              bloco try-catch para capturar exceções e fornecer uma mensagem de erro adequada
-              ao usuário.
+              Quando ocorrer um erro durante a chamada
+              de API, você pode exibir uma mensagem de erro relevante para o usuário. Isso pode
+              ser feito por meio de um diálogo, um snackbar, um Toast ou qualquer outro
+              componente de interface do usuário adequado.
             </p>
             <p>Exemplo:</p>
-            <img src="../../src/images/semana06-img04.png">
-          </div>
-        </span>
+            <img src="../../src/images/semana06-img05.png">
+            <br>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header">Tratar erros específicos da API</div>
+        <div class="collapsible-body">
+          <span>
+            <p>
+              Além dos erros de conexão, a API pode retornar
+              erros específicos com informações úteis. Por exemplo, uma resposta com código de
+              status 400 pode indicar que os dados da solicitação estão incorretos. Você pode
+              analisar a resposta da API e tratar esses erros específicos de acordo.
+            </p>
+            <p>Exemplo:</p>
+            <img src="../../src/images/semana06-img06.png">
+            <br>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header">Fornecer feedback de carregamento</div>
+        <div class="collapsible-body">
+          <span>
+            <p>
+              Durante a chamada de API, é comum exibir
+              um indicador de carregamento para informar ao usuário que a solicitação está em
+              andamento. Isso pode ser feito usando um CircularProgressIndicator ou outro
+              componente visual adequado.
+            </p>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6">
+        <p>
+          Essas são apenas algumas práticas básicas para lidar com erros e fornecer feedback ao
+          usuário durante chamadas de API em Flutter. Você pode adaptar essas práticas de acordo
+          com os requisitos do seu aplicativo e a lógica específica das chamadas de API que está
+          implementando.
+        </p>
       </div>
-    </li>
-  </ul>
-
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Exibir mensagens de erro ao usuário</div>
-      <div class="collapsible-body">
-        <span>
-          <p>
-            Quando ocorrer um erro durante a chamada
-            de API, você pode exibir uma mensagem de erro relevante para o usuário. Isso pode
-            ser feito por meio de um diálogo, um snackbar, um Toast ou qualquer outro
-            componente de interface do usuário adequado.
-          </p>
-          <p>Exemplo:</p>
-          <img src="../../src/images/semana06-img05.png">
-          <br>
-        </span>
-      </div>
-    </li>
-  </ul>
-
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Tratar erros específicos da API</div>
-      <div class="collapsible-body">
-        <span>
-          <p>
-            Além dos erros de conexão, a API pode retornar
-            erros específicos com informações úteis. Por exemplo, uma resposta com código de
-            status 400 pode indicar que os dados da solicitação estão incorretos. Você pode
-            analisar a resposta da API e tratar esses erros específicos de acordo.
-          </p>
-          <p>Exemplo:</p>
-          <img src="../../src/images/semana06-img06.png">
-          <br>
-        </span>
-      </div>
-    </li>
-  </ul>
-
-
-  <ul class="collapsible">
-    <li class="active">
-      <div class="collapsible-header">Fornecer feedback de carregamento</div>
-      <div class="collapsible-body">
-        <span>
-          <p>
-            Durante a chamada de API, é comum exibir
-            um indicador de carregamento para informar ao usuário que a solicitação está em
-            andamento. Isso pode ser feito usando um CircularProgressIndicator ou outro
-            componente visual adequado.
-          </p>
-        </span>
-      </div>
-    </li>
-  </ul>
-
-  <div class="row">
-    <div class="col s6">
-      <p>
-        Essas são apenas algumas práticas básicas para lidar com erros e fornecer feedback ao
-        usuário durante chamadas de API em Flutter. Você pode adaptar essas práticas de acordo
-        com os requisitos do seu aplicativo e a lógica específica das chamadas de API que está
-        implementando.
-      </p>
     </div>
+    </ul>
   </div>
-  </ul>
+
+
 
   <!--Nav Bar-->
 

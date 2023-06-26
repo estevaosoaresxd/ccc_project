@@ -16,6 +16,7 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Semana 12</title>
 
 </head>
 
@@ -49,154 +50,159 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>Trabalhando com dados em armazenamento</h1>
-  <div class="section">
-    <div class="row">
-      <div class="col s6">
-        <span class="flow-text">Introdução</span>
-        <p>
-          Neste tópico, iremos ter uma introdução sobre os tipos de armazenamento no Flutter, como o armazenamento local
-          como banco de dados, como arquivos, entre outros.
-        </p>
+  <div class="padding-30">
+    <h1>Trabalhando com dados em armazenamento</h1>
+    <div class="section">
+      <div class="row">
+        <div class="col s6">
+          <span class="flow-text">Introdução</span>
+          <p>
+            Neste tópico, iremos ter uma introdução sobre os tipos de armazenamento no Flutter, como o armazenamento
+            local
+            como banco de dados, como arquivos, entre outros.
+          </p>
+        </div>
       </div>
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">Tipos de armazenamento de dados</div>
+          <div class="collapsible-body row">
+            <div class="col s4">
+              <span>
+                <b>Cache:</b>
+                <br>
+                É usado para armazenar
+                temporariamente dados que são
+                frequentemente acessados e não
+                precisam ser persistentes entre as
+                sessões do aplicativo. O Flutter oferece
+                suporte ao armazenamento em cache
+                por meio de bibliotecas como o
+                shared_preferences, permitindo que
+                você armazene dados simples como
+                pares de chave-valor
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>Local Database:</b>
+                <br>
+                Para aplicativos que precisam de um
+                armazenamento mais robusto e
+                estruturado, é possível utilizar um
+                banco de dados local. O Flutter possui
+                bibliotecas populares, como o sqflite e
+                o moor, que permitem a criação e a
+                manipulação de bancos de dados SQLite
+                no dispositivo
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>File Storage:</b>
+                <br>
+                Quando se trata de armazenar arquivos,
+                como imagens, áudios ou documentos, o
+                Flutter oferece facilidades para
+                manipulação de sistemas de arquivos
+                locais. A biblioteca path_provider é
+                frequentemente utilizada para obter o
+                caminho do diretório de armazenamento
+                do dispositivo e a biblioteca dart:io
+                oferece recursos para trabalhar com
+                arquivos e diretórios
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>Outros:</b>
+                <br>
+                Além dessas opções, também é possível
+                integrar o Flutter com serviços de
+                armazenamento em nuvem, como
+                Firebase Storage, Amazon S3 ou Google
+                Cloud Storage, para armazenar dados de
+                forma remota e acessível em vários
+                dispositivos
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">Banco de dados local</div>
+          <div class="collapsible-body row">
+            <div class="col 4">
+              <span>
+                <b>Introdução:</b>
+                <br>
+                ● No desenvolvimento de aplicativos
+                Flutter, é comum a necessidade de
+                armazenar dados localmente
+                <br>
+                ● Uma das formas de fazer isso é utilizando
+                um banco de dados local para armazenar
+                e recuperar informações no dispositivo
+                do usuário
+                <br>
+                ● Existem várias opções disponíveis para
+                realizar essa tarefa em Flutter, sendo as
+                mais populares o SQLite e o Moor
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>SQLite:</b>
+                <br>
+                ● Um banco de dados relacional embutido,
+                que oferece uma solução leve e eficiente
+                para armazenamento local
+                <br>
+                ● Amplamente utilizado em aplicativos
+                móveis e possui uma implementação
+                nativa em Flutter por meio do pacote
+                "sqflite"
+                <br>
+                ● É possível criar tabelas, executar
+                consultas SQL e realizar operações de
+                inserção, atualização e exclusão de dado
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>Moor:</b>
+                <br>
+                ● Um gerador de código que facilita a
+                interação com bancos de dados SQLite
+                em Flutter
+                <br>
+                ● Ele permite definir as tabelas e consultas
+                através de classes Dart, gerando o código
+                necessário para acessar o banco de dados
+                <br>
+                ● Com o Moor, você pode escrever
+                consultas em uma sintaxe mais amigável,
+                além de aproveitar recursos como
+                verificação de tipos em tempo de
+                compilação
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-    <ul class="collapsible">
+    <div class="section">
+      <p><br></p>
+    </div>
+    <div class="section">
+      <p><br></p>
+    </div>
+  </div>
 
-      <li class="active">
-        <div class="collapsible-header">Tipos de armazenamento de dados</div>
-        <div class="collapsible-body row">
-          <div class="col s4">
-            <span>
-              <b>Cache:</b>
-              <br>
-              É usado para armazenar
-              temporariamente dados que são
-              frequentemente acessados e não
-              precisam ser persistentes entre as
-              sessões do aplicativo. O Flutter oferece
-              suporte ao armazenamento em cache
-              por meio de bibliotecas como o
-              shared_preferences, permitindo que
-              você armazene dados simples como
-              pares de chave-valor
-            </span>
-          </div>
-          <div class="col s4">
-            <span>
-              <b>Local Database:</b>
-              <br>
-              Para aplicativos que precisam de um
-              armazenamento mais robusto e
-              estruturado, é possível utilizar um
-              banco de dados local. O Flutter possui
-              bibliotecas populares, como o sqflite e
-              o moor, que permitem a criação e a
-              manipulação de bancos de dados SQLite
-              no dispositivo
-            </span>
-          </div>
-          <div class="col s4">
-            <span>
-              <b>File Storage:</b>
-              <br>
-              Quando se trata de armazenar arquivos,
-              como imagens, áudios ou documentos, o
-              Flutter oferece facilidades para
-              manipulação de sistemas de arquivos
-              locais. A biblioteca path_provider é
-              frequentemente utilizada para obter o
-              caminho do diretório de armazenamento
-              do dispositivo e a biblioteca dart:io
-              oferece recursos para trabalhar com
-              arquivos e diretórios
-            </span>
-          </div>
-          <div class="col s4">
-            <span>
-              <b>Outros:</b>
-              <br>
-              Além dessas opções, também é possível
-              integrar o Flutter com serviços de
-              armazenamento em nuvem, como
-              Firebase Storage, Amazon S3 ou Google
-              Cloud Storage, para armazenar dados de
-              forma remota e acessível em vários
-              dispositivos
-            </span>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <ul class="collapsible">
 
-      <li class="active">
-        <div class="collapsible-header">Banco de dados local</div>
-        <div class="collapsible-body row">
-          <div class="col 4">
-            <span>
-              <b>Introdução:</b>
-              <br>
-              ● No desenvolvimento de aplicativos
-              Flutter, é comum a necessidade de
-              armazenar dados localmente
-              <br>
-              ● Uma das formas de fazer isso é utilizando
-              um banco de dados local para armazenar
-              e recuperar informações no dispositivo
-              do usuário
-              <br>
-              ● Existem várias opções disponíveis para
-              realizar essa tarefa em Flutter, sendo as
-              mais populares o SQLite e o Moor
-            </span>
-          </div>
-          <div class="col s4">
-            <span>
-              <b>SQLite:</b>
-              <br>
-              ● Um banco de dados relacional embutido,
-              que oferece uma solução leve e eficiente
-              para armazenamento local
-              <br>
-              ● Amplamente utilizado em aplicativos
-              móveis e possui uma implementação
-              nativa em Flutter por meio do pacote
-              "sqflite"
-              <br>
-              ● É possível criar tabelas, executar
-              consultas SQL e realizar operações de
-              inserção, atualização e exclusão de dado
-            </span>
-          </div>
-          <div class="col s4">
-            <span>
-              <b>Moor:</b>
-              <br>
-              ● Um gerador de código que facilita a
-              interação com bancos de dados SQLite
-              em Flutter
-              <br>
-              ● Ele permite definir as tabelas e consultas
-              através de classes Dart, gerando o código
-              necessário para acessar o banco de dados
-              <br>
-              ● Com o Moor, você pode escrever
-              consultas em uma sintaxe mais amigável,
-              além de aproveitar recursos como
-              verificação de tipos em tempo de
-              compilação
-            </span>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="section">
-    <p><br></p>
-  </div>
-  <div class="section">
-    <p><br></p>
-  </div>
   <!--Footer-->
   <footer class="page-footer blue lighten-2">
     <div class="container ">

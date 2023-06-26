@@ -52,266 +52,278 @@
 
   <!-- Introdução -->
 
-  <h1>Introdução ao Dart</h1>
-  <div class="section">
+  <div class="padding-30">
+    <h1>Introdução ao Dart</h1>
+    <div class="section">
 
-    <div class="row">
-      <div class="col s12"><span class="flow-text"></span>
-        <br> ● Neste tópico, vamos explorar a história do Dart e algumas das suas funcionalidades.
-        </p>
+      <div class="row">
+        <div class="col s12"><span class="flow-text"></span>
+          <br> ● Neste tópico, vamos explorar a história do Dart e algumas das suas funcionalidades.
+          </p>
+        </div>
       </div>
+
+      <!-- Fim Introdução -->
+
+      <!-- O que é Dart e por que é usado com o Flutter -->
+
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">O que é Dart e por que é usado com o Flutter</div>
+          <div class="collapsible-body row">
+
+            <div class="col s6"><b>O que é</b><span><br>
+                <br>● Dart é uma linguagem de programação desenvolvida pelo Google.
+                <br>● É uma linguagem otimizada para a criação de aplicativos móveis e web.
+                <br>● Dart foi escolhida como a linguagem principal do Flutter devido à sua sintaxe limpa, facilidade de
+                aprendizado, desempenho e recursos avançados de programação orientada a objetos.
+              </span></div>
+
+            <div class="col s6"><b>História</b><span><br>
+                <br>● O desenvolvimento do Dart começou em 2011, quando o Google decidiu criar uma nova linguagem de
+                programação
+                para melhorar a experiência de desenvolvimento da web.
+                <br>● A primeira versão do Dart foi lançada em 2013, e desde então tem passado por várias atualizações e
+                melhorias.
+                <br>● O Dart 2, lançado em 2018, trouxe importantes melhorias de desempenho e produtividade,
+                consolidando
+                ainda mais sua posição como uma linguagem poderosa para o desenvolvimento de aplicativos.
+
+              </span></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Fim O que é Dart e por que é usado com o Flutter -->
+
+
+      <!-- História do Flutter E Seu Crescimento -->
+
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">História do Flutter E Seu Crescimento</div>
+          <div class="collapsible-body row">
+
+            <div class="col s4"><b>História</b><span><br>
+                <br>● O Flutter foi anunciado pela primeira vez em 2015 no evento Google I/O.
+                <br>● A versão inicial do Flutter foi lançada em 2017, permitindo aos desenvolvedores criar interfaces
+                de
+                usuário bonitas e responsivas para iOS e Android a partir de um único código-base.
+                <br>● O Flutter ganhou popularidade rapidamente devido à sua abordagem inovadora de desenvolvimento de
+                aplicativos e à facilidade de criação de interfaces de usuário ricas e personalizadas.
+              </span></div>
+
+            <div class="col s4"><b>Crescimento Do Flutter</b><span><br>
+                <br>● O Dart e o Flutter têm experimentado um crescimento significativo na comunidade de desenvolvimento
+                de aplicativos nos últimos anos.
+                <br>● O Flutter foi lançado pela primeira vez em 2017 e, desde então, tem ganhado popularidade
+                rapidamente.
+                <br>● Em 2021, o Flutter atingiu mais de 2 milhões de desenvolvedores em todo o mundo, tornando-se uma
+                das
+                principais escolhas para o desenvolvimento de aplicativos multiplataforma.
+              </span></div>
+
+            <div class="col s4"><b>Benefícios do Dart e Flutter</b><span><br>
+                <br>● Dart oferece uma sintaxe moderna e limpa, facilitando a leitura e a escrita de código.
+                <br>● O Flutter fornece um conjunto abrangente de widgets pré-construídos, que ajudam a criar interfaces
+                de usuário ricas e responsivas.
+                <br>● O Hot Reload, recurso do Flutter, permite visualizar instantaneamente as alterações feitas no
+                código, acelerando o processo de desenvolvimento.
+              </span></div>
+
+          </div>
+        </li>
+      </ul>
+
+      <!-- Fim História do Flutter E Seu Crescimento -->
+
+      <!-- Conceitos básicos de Dart -->
+
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">Conceitos básicos de Dart</div>
+          <div class="collapsible-body row">
+
+            <div class="col s6"><b>Tipos de dados</b><span><br>
+                <br>Dart tem vários tipos de dados que você pode usar para armazenar informações em variáveis. Portanto,
+                os tipos de dados em Dart incluem:
+                <br>● Int: usado para armazenar números inteiros.
+                <br>● Double: usado para armazenar números de ponto flutuante.
+                <br>● String: usado para armazenar texto.
+                <br>● Boolean: usado para armazenar valores verdadeiros ou falsos.
+                <br> Dart possui uma ampla variedade de tipos de dados, incluindo int, double, String, bool, entre
+                outros.
+                Também suporta listas, mapas e objetos personalizados.
+                <br><br> Neste exemplo cria uma variável chamada "nome" e atribui a ela o valor "João". Essa variável é
+                do
+                tipo string, que é usada para armazenar sequências de caracteres.
+              </span></div>
+
+            <div class="col s6">
+              <div class="card-image">
+                <img src="../../src/images/Tipos_Dados_Exemplo1.png" width="60%">
+                <span class="card-title"></span>
+              </div>
+            </div>
+
+            <div class="row"></div>
+            <div class="col s6"><b>Variáveis</b><span><br>
+                <br>● São utilizadas para armazenar valores em memória. Podem ser declaradas explicitamente ou inferidas
+                pelo tipo de valor atribuído.
+                <br>● Primeiramente, para criar uma variável em Dart, você precisa declarar um nome
+                de variável e um tipo de dados.
+                <br><br>Nesse exemplo, “idade” é o nome da variável e “int” é o tipo de dados.
+                O valor atribuído à variável é 30.
+              </span></div>
+
+            <div class="col s6">
+              <div class="card-image">
+                <img src="../../src/images/Variaveis_Exemplo.png" width="60%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+            </div>
+
+            <div class="row"></div>
+            <div class="col s6"><b>Funções</b><span><br>
+                <br>● Permitem agrupar um conjunto de instruções em um bloco de código reutilizável.
+                <br> ● Podem receber parâmetros e retornar valores.
+                <br><br>Esse exemplo é uma definição de uma função chamada soma que recebe dois parâmetros a e b, ambos
+                do
+                tipo int (inteiro). A função retorna a soma desses dois valores.
+              </span></div>
+
+            <div class="col s6">
+              <div class="card-image">
+                <img src="../../src/images/Funcoes_Exemplo.png" width="60%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+            </div>
+
+            <div class="row"></div>
+            <div class="col s6"><b>Classes</b><span><br>
+                <br>● Dart é uma linguagem orientada a objetos, então classes e objetos são fundamentais.
+                <br>● Classes são estruturas que definem propriedades e comportamentos.
+                <br>● Objetos são instâncias de classes.
+                <br><br> Esse exemplo é a definição de uma classe chamada "Pessoa". Em programação orientada a objetos,
+                uma
+                classe é uma estrutura que define um tipo de objeto contendo atributos (variáveis) e métodos (funções).
+                Nesse caso, a classe "Pessoa" possui três atributos: nome(string), idade(int), altura(double).
+              </span></div>
+
+            <div class="col s6">
+              <div class="card-image">
+                <img src="../../src/images/Classe_Exemplo.png" width="60%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+            </div>
+
+            <div class="row"></div>
+            <div class="col s6"><b>Classes e Objetos</b><span><br>
+                <br>● Um objeto é uma instância de uma classe. É uma representação concreta de um conceito definido pela
+                classe.
+                <br>● Os objetos possuem seus próprios valores para os atributos da classe.
+                <br>● Eles podem invocar os métodos da classe para realizar ações ou operações específicas.
+                <br>● Os objetos são criados usando o operador "new" seguido do nome da classe.
+                <br>● Cada objeto é independente dos outros objetos da mesma classe, com seu próprio conjunto de valores
+                para os atributos.
+                <br>● Os objetos podem interagir entre si, trocando informações ou realizando ações por meio de métodos
+                da
+                classe.
+                <br> <br> O Exemplo define uma classe "Pessoa" com atributos nome, idade e altura, e um método dormir()
+                que
+                imprime
+                no console uma mensagem indicando que a pessoa está dormindo. O método main() cria um objeto "pessoa1" e
+                instancia a classe "Pessoa".
+
+              </span></div>
+
+            <div class="col s6">
+              <div class="card-image">
+                <img src="../../src/images/classes_objetos_exemplos.png" width="60%"></script>
+                <span class="card-title">
+                </span>
+              </div>
+            </div>
+
+          </div>
     </div>
-
-    <!-- Fim Introdução -->
-
-    <!-- O que é Dart e por que é usado com o Flutter -->
-
-    <ul class="collapsible">
-
-      <li class="active">
-        <div class="collapsible-header">O que é Dart e por que é usado com o Flutter</div>
-        <div class="collapsible-body row">
-
-          <div class="col s6"><b>O que é</b><span><br>
-              <br>● Dart é uma linguagem de programação desenvolvida pelo Google.
-              <br>● É uma linguagem otimizada para a criação de aplicativos móveis e web.
-              <br>● Dart foi escolhida como a linguagem principal do Flutter devido à sua sintaxe limpa, facilidade de
-              aprendizado, desempenho e recursos avançados de programação orientada a objetos.
-            </span></div>
-
-          <div class="col s6"><b>História</b><span><br>
-              <br>● O desenvolvimento do Dart começou em 2011, quando o Google decidiu criar uma nova linguagem de
-              programação
-              para melhorar a experiência de desenvolvimento da web.
-              <br>● A primeira versão do Dart foi lançada em 2013, e desde então tem passado por várias atualizações e
-              melhorias.
-              <br>● O Dart 2, lançado em 2018, trouxe importantes melhorias de desempenho e produtividade, consolidando
-              ainda mais sua posição como uma linguagem poderosa para o desenvolvimento de aplicativos.
-
-            </span></div>
-        </div>
-      </li>
+    </li>
     </ul>
 
-    <!-- Fim O que é Dart e por que é usado com o Flutter -->
+    <!--Fim Conceitos básicos de Dart -->
 
-
-    <!-- História do Flutter E Seu Crescimento -->
+    <!-- Exercícios -->
 
     <ul class="collapsible">
 
       <li class="active">
-        <div class="collapsible-header">História do Flutter E Seu Crescimento</div>
+        <div class="collapsible-header">Exercícios</div>
         <div class="collapsible-body row">
 
-          <div class="col s4"><b>História</b><span><br>
-              <br>● O Flutter foi anunciado pela primeira vez em 2015 no evento Google I/O.
-              <br>● A versão inicial do Flutter foi lançada em 2017, permitindo aos desenvolvedores criar interfaces de
-              usuário bonitas e responsivas para iOS e Android a partir de um único código-base.
-              <br>● O Flutter ganhou popularidade rapidamente devido à sua abordagem inovadora de desenvolvimento de
-              aplicativos e à facilidade de criação de interfaces de usuário ricas e personalizadas.
+          <div class="col s4"><b>Exercício - 1</b><span><br>
+              <br>● Faça um programa que receba o custo de um espetáculo teatral e o preço do convite desse espetáculo.
+              Esse programa deverá calcular e mostrar a quantidade de convites que devem ser vendidos para pelo menos, o
+              custo do espetáculo seja alcançado.​
             </span></div>
 
-          <div class="col s4"><b>Crescimento Do Flutter</b><span><br>
-              <br>● O Dart e o Flutter têm experimentado um crescimento significativo na comunidade de desenvolvimento
-              de aplicativos nos últimos anos.
-              <br>● O Flutter foi lançado pela primeira vez em 2017 e, desde então, tem ganhado popularidade
-              rapidamente.
-              <br>● Em 2021, o Flutter atingiu mais de 2 milhões de desenvolvedores em todo o mundo, tornando-se uma das
-              principais escolhas para o desenvolvimento de aplicativos multiplataforma.
+          <div class="col s4"><b>Exercício - 2</b><span><br>
+              <br>● Faça um programa que calcule e mostre a área de um trapézio.
+              Sabe-se que: Área = ( ( base maior + base menor ) * altura ) / 2
             </span></div>
 
-          <div class="col s4"><b>Benefícios do Dart e Flutter</b><span><br>
-              <br>● Dart oferece uma sintaxe moderna e limpa, facilitando a leitura e a escrita de código.
-              <br>● O Flutter fornece um conjunto abrangente de widgets pré-construídos, que ajudam a criar interfaces
-              de usuário ricas e responsivas.
-              <br>● O Hot Reload, recurso do Flutter, permite visualizar instantaneamente as alterações feitas no
-              código, acelerando o processo de desenvolvimento.
+          <div class="col s4"><b>Exercício - 3</b><span><br>
+              <br>● Faça um programa que receba o peso de uma pessoa em quilos (kg), calcule e mostre esse peso em
+              gramas
+              (g).
             </span></div>
 
         </div>
       </li>
     </ul>
 
-    <!-- Fim História do Flutter E Seu Crescimento -->
+    <!-- Fim Exercícios -->
 
-    <!-- Conceitos básicos de Dart -->
+    <!-- Resolução Exercícios -->
 
     <ul class="collapsible">
 
       <li class="active">
-        <div class="collapsible-header">Conceitos básicos de Dart</div>
+        <div class="collapsible-header">Resolução dos Exercícios</div>
         <div class="collapsible-body row">
 
-          <div class="col s6"><b>Tipos de dados</b><span><br>
-              <br>Dart tem vários tipos de dados que você pode usar para armazenar informações em variáveis. Portanto,
-              os tipos de dados em Dart incluem:
-              <br>● Int: usado para armazenar números inteiros.
-              <br>● Double: usado para armazenar números de ponto flutuante.
-              <br>● String: usado para armazenar texto.
-              <br>● Boolean: usado para armazenar valores verdadeiros ou falsos.
-              <br> Dart possui uma ampla variedade de tipos de dados, incluindo int, double, String, bool, entre outros.
-              Também suporta listas, mapas e objetos personalizados.
-              <br><br> Neste exemplo cria uma variável chamada "nome" e atribui a ela o valor "João". Essa variável é do
-              tipo string, que é usada para armazenar sequências de caracteres.
-            </span></div>
+          <div class="col s12"><b>Exercício - 1</b><span><br>
+              <div class="card-image">
+                <img src="../../src/images/Semana2-Ex1.png" width="50%"></script>
+                <span class="card-title">
+                </span>
+              </div>
 
-          <div class="col s6">
-            <div class="card-image">
-              <img src="../../src/images/Tipos_Dados_Exemplo1.png" width="60%">
-              <span class="card-title"></span>
-            </div>
-          </div>
+              <div class="col s12"><b>Exercício - 2</b><span><br>
+                  <div class="card-image">
+                    <img src="../../src/images/Semana2-Ex2.png" width="50%"></script>
+                    <span class="card-title">
+                    </span>
+                  </div>
 
-          <div class="row"></div>
-          <div class="col s6"><b>Variáveis</b><span><br>
-              <br>● São utilizadas para armazenar valores em memória. Podem ser declaradas explicitamente ou inferidas
-              pelo tipo de valor atribuído.
-              <br>● Primeiramente, para criar uma variável em Dart, você precisa declarar um nome
-              de variável e um tipo de dados.
-              <br><br>Nesse exemplo, “idade” é o nome da variável e “int” é o tipo de dados.
-              O valor atribuído à variável é 30.
-            </span></div>
+                  <div class="col s12"><b>Exercício - 3</b><span><br>
+                      <div class="card-image">
+                        <img src="../../src/images/Semana2-Ex3.png" width="50%"></script>
+                        <span class="card-title">
+                        </span>
+                      </div>
 
-          <div class="col s6">
-            <div class="card-image">
-              <img src="../../src/images/Variaveis_Exemplo.png" width="60%"></script>
-              <span class="card-title">
-              </span>
-            </div>
-          </div>
+                  </div>
+      </li>
+    </ul>
 
-          <div class="row"></div>
-          <div class="col s6"><b>Funções</b><span><br>
-              <br>● Permitem agrupar um conjunto de instruções em um bloco de código reutilizável.
-              <br> ● Podem receber parâmetros e retornar valores.
-              <br><br>Esse exemplo é uma definição de uma função chamada soma que recebe dois parâmetros a e b, ambos do
-              tipo int (inteiro). A função retorna a soma desses dois valores.
-            </span></div>
-
-          <div class="col s6">
-            <div class="card-image">
-              <img src="../../src/images/Funcoes_Exemplo.png" width="60%"></script>
-              <span class="card-title">
-              </span>
-            </div>
-          </div>
-
-          <div class="row"></div>
-          <div class="col s6"><b>Classes</b><span><br>
-              <br>● Dart é uma linguagem orientada a objetos, então classes e objetos são fundamentais.
-              <br>● Classes são estruturas que definem propriedades e comportamentos.
-              <br>● Objetos são instâncias de classes.
-              <br><br> Esse exemplo é a definição de uma classe chamada "Pessoa". Em programação orientada a objetos,
-              uma
-              classe é uma estrutura que define um tipo de objeto contendo atributos (variáveis) e métodos (funções).
-              Nesse caso, a classe "Pessoa" possui três atributos: nome(string), idade(int), altura(double).
-            </span></div>
-
-          <div class="col s6">
-            <div class="card-image">
-              <img src="../../src/images/Classe_Exemplo.png" width="60%"></script>
-              <span class="card-title">
-              </span>
-            </div>
-          </div>
-
-          <div class="row"></div>
-          <div class="col s6"><b>Classes e Objetos</b><span><br>
-              <br>● Um objeto é uma instância de uma classe. É uma representação concreta de um conceito definido pela
-              classe.
-              <br>● Os objetos possuem seus próprios valores para os atributos da classe.
-              <br>● Eles podem invocar os métodos da classe para realizar ações ou operações específicas.
-              <br>● Os objetos são criados usando o operador "new" seguido do nome da classe.
-              <br>● Cada objeto é independente dos outros objetos da mesma classe, com seu próprio conjunto de valores
-              para os atributos.
-              <br>● Os objetos podem interagir entre si, trocando informações ou realizando ações por meio de métodos da
-              classe.
-              <br> <br> O Exemplo define uma classe "Pessoa" com atributos nome, idade e altura, e um método dormir()
-              que
-              imprime
-              no console uma mensagem indicando que a pessoa está dormindo. O método main() cria um objeto "pessoa1" e
-              instancia a classe "Pessoa".
-
-            </span></div>
-
-          <div class="col s6">
-            <div class="card-image">
-              <img src="../../src/images/classes_objetos_exemplos.png" width="60%"></script>
-              <span class="card-title">
-              </span>
-            </div>
-          </div>
-
-        </div>
   </div>
-  </li>
-  </ul>
 
-  <!--Fim Conceitos básicos de Dart -->
-
-  <!-- Exercícios -->
-
-  <ul class="collapsible">
-
-    <li class="active">
-      <div class="collapsible-header">Exercícios</div>
-      <div class="collapsible-body row">
-
-        <div class="col s4"><b>Exercício - 1</b><span><br>
-            <br>● Faça um programa que receba o custo de um espetáculo teatral e o preço do convite desse espetáculo.
-            Esse programa deverá calcular e mostrar a quantidade de convites que devem ser vendidos para pelo menos, o
-            custo do espetáculo seja alcançado.​
-          </span></div>
-
-        <div class="col s4"><b>Exercício - 2</b><span><br>
-            <br>● Faça um programa que calcule e mostre a área de um trapézio.
-            Sabe-se que: Área = ( ( base maior + base menor ) * altura ) / 2
-          </span></div>
-
-        <div class="col s4"><b>Exercício - 3</b><span><br>
-            <br>● Faça um programa que receba o peso de uma pessoa em quilos (kg), calcule e mostre esse peso em gramas
-            (g).
-          </span></div>
-
-      </div>
-    </li>
-  </ul>
-
-  <!-- Fim Exercícios -->
-
-  <!-- Resolução Exercícios -->
-
-  <ul class="collapsible">
-
-    <li class="active">
-      <div class="collapsible-header">Resolução dos Exercícios</div>
-      <div class="collapsible-body row">
-
-        <div class="col s12"><b>Exercício - 1</b><span><br>
-            <div class="card-image">
-              <img src="../../src/images/Semana2-Ex1.png" width="50%"></script>
-              <span class="card-title">
-              </span>
-            </div>
-
-            <div class="col s12"><b>Exercício - 2</b><span><br>
-                <div class="card-image">
-                  <img src="../../src/images/Semana2-Ex2.png" width="50%"></script>
-                  <span class="card-title">
-                  </span>
-                </div>
-
-                <div class="col s12"><b>Exercício - 3</b><span><br>
-                    <div class="card-image">
-                      <img src="../../src/images/Semana2-Ex3.png" width="50%"></script>
-                      <span class="card-title">
-                      </span>
-                    </div>
-
-                </div>
-    </li>
-  </ul>
 
   <!-- Fim Resolução Exercícios -->
 

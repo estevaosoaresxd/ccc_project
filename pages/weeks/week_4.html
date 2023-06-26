@@ -50,191 +50,197 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>Widgets em Flutter</h1>
-
-  <!-- Introdução -->
-
-  <div class="section">
-
-    <div class="row">
-      <div class="col s12"><span class="flow-text"></span>
-        <br> ● Neste tópico, veremos widgets em flutter, para que servem e como usá-los.
-        </p>
-      </div>
-    </div>
+  <div class="padding-30">
+    <h1>Widgets em Flutter</h1>
 
     <!-- Introdução -->
 
-    <!-- O que são Widgets e como funcionam em Flutter -->
+    <div class="section">
 
-    <ul class="collapsible">
-
-      <li class="active">
-        <div class="collapsible-header">O que são Widgets e como funcionam em Flutter
+      <div class="row">
+        <div class="col s12"><span class="flow-text"></span>
+          <br> ● Neste tópico, veremos widgets em flutter, para que servem e como usá-los.
+          </p>
         </div>
-        <div class="collapsible-body row">
+      </div>
 
-          <div class="col s6"><b>O que são Widgets</b><span><br>
-              <br>● Widgets são os blocos de construção básicos de uma interface de usuário em Flutter.
-              Tudo em Flutter é um widget, incluindo elementos visuais, layouts, estilos e até mesmo o aplicativo em
-              si.
-              <br>● Os widgets são declarativos e reativos, o que significa que a interface de usuário é atualizada
-              automaticamente sempre que ocorrem mudanças nos widgets.
-            </span></div>
+      <!-- Introdução -->
 
-          <div class="col s6"><b>Widgets Básicos</b><span><br>
-              <br>● Container: Um widget versátil usado para criar layouts, aplicar margens, preenchimentos e decorações
-              aos elementos.
-              <br>● Row:Um widget que organiza seus filhos horizontalmente em uma linha.
-              <br>● Column:Um widget que organiza seus filhos verticalmente em uma coluna.
-              <br>● Text:Um widget usado para exibir texto com estilo.
-              <br>● Image:Um widget usado para exibir imagens em um aplicativo Flutter.
-              <br>
-              <br>E muitos outros widgets disponíveis no Flutter para diferentes finalidades.
+      <!-- O que são Widgets e como funcionam em Flutter -->
 
-            </span></div>
+      <ul class="collapsible">
 
-          <div class="col s6"><b>Composição de widgets para criar layouts</b><span><br>
-              <br>● Em Flutter, os layouts são criados pela composição de vários widgets.
-              <br>● Os widgets são aninhados uns dentro dos outros para criar a hierarquia visual do aplicativo.
-              <br>● A composição flexível de widgets permite a criação de layouts complexos e personalizados
-            </span></div>
-
-          <div class="row"></div>
-
-          <div class="col s6"><b>Exemplo de composição de widgets</b><span><br>
-              <br>● O código cria um Container contendo um Row com dois filhos: um Icon representando uma estrela e um
-              Text exibindo a mensagem "Avaliação: 4.5". O Row organiza esses dois filhos em uma linha horizontal
-              dentro
-              do Container.
-            </span></div>
-
-          <div class="col s12"><span><br><br>
-              <div class="card-image">
-                <img src="../../src/images/Exemplo_Widget.png" width="40%"></script>
-                <span class="card-title">
-                </span>
-              </div>
+        <li class="active">
+          <div class="collapsible-header">O que são Widgets e como funcionam em Flutter
           </div>
+          <div class="collapsible-body row">
 
-      </li>
-    </ul>
+            <div class="col s6"><b>O que são Widgets</b><span><br>
+                <br>● Widgets são os blocos de construção básicos de uma interface de usuário em Flutter.
+                Tudo em Flutter é um widget, incluindo elementos visuais, layouts, estilos e até mesmo o aplicativo em
+                si.
+                <br>● Os widgets são declarativos e reativos, o que significa que a interface de usuário é atualizada
+                automaticamente sempre que ocorrem mudanças nos widgets.
+              </span></div>
 
-    <!-- O que são Widgets e como funcionam em Flutter -->
+            <div class="col s6"><b>Widgets Básicos</b><span><br>
+                <br>● Container: Um widget versátil usado para criar layouts, aplicar margens, preenchimentos e
+                decorações
+                aos elementos.
+                <br>● Row:Um widget que organiza seus filhos horizontalmente em uma linha.
+                <br>● Column:Um widget que organiza seus filhos verticalmente em uma coluna.
+                <br>● Text:Um widget usado para exibir texto com estilo.
+                <br>● Image:Um widget usado para exibir imagens em um aplicativo Flutter.
+                <br>
+                <br>E muitos outros widgets disponíveis no Flutter para diferentes finalidades.
 
-    <!-- Método Construtor -->
+              </span></div>
 
-    <ul class="collapsible">
+            <div class="col s6"><b>Composição de widgets para criar layouts</b><span><br>
+                <br>● Em Flutter, os layouts são criados pela composição de vários widgets.
+                <br>● Os widgets são aninhados uns dentro dos outros para criar a hierarquia visual do aplicativo.
+                <br>● A composição flexível de widgets permite a criação de layouts complexos e personalizados
+              </span></div>
 
-      <li class="active">
-        <div class="collapsible-header">Método Construtor
-        </div>
-        <div class="collapsible-body row">
+            <div class="row"></div>
 
-          <div class="col s6"><b>O que o Metódo Construtor</b><span><br>
-              <br>● Um método construtor, como o próprio nome já diz, é responsável pela criação do objeto daquela
-              classe, iniciando com valores seus atributos ou realizando outras funções que possam vir a ser
-              necessárias.
-              <br>● Em Flutter, classes também têm construtores que permitem personalizar a criação de objetos
-            </span></div>
+            <div class="col s6"><b>Exemplo de composição de widgets</b><span><br>
+                <br>● O código cria um Container contendo um Row com dois filhos: um Icon representando uma estrela e um
+                Text exibindo a mensagem "Avaliação: 4.5". O Row organiza esses dois filhos em uma linha horizontal
+                dentro
+                do Container.
+              </span></div>
 
-          <div class="row"></div>
+            <div class="col s12"><span><br><br>
+                <div class="card-image">
+                  <img src="../../src/images/Exemplo_Widget.png" width="40%"></script>
+                  <span class="card-title">
+                  </span>
+                </div>
+            </div>
 
-          <div class="col s6"><b>Construtor Padrão</b><span><br>
-              <br>● É fornecido automaticamente pelo Flutter se nenhum construtor personalizado for definido
-              necessárias.
-            </span></div>
+        </li>
+      </ul>
 
-          <div class="col s6"><b>Construtor Nomeado</b><span><br>
-              <br>● Permite criar construtores adicionais com nomes diferentes para atender a necessidades específicas
-            </span></div>
+      <!-- O que são Widgets e como funcionam em Flutter -->
 
-          <div class="col s6"><span><br><br>
-              <div class="card-image">
-                <img src="../../src/images/Construtor_Padrao.png" width="80%"></script>
-                <span class="card-title">
-                </span>
-              </div>
+      <!-- Método Construtor -->
+
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">Método Construtor
           </div>
+          <div class="collapsible-body row">
 
-          <div class="col s6"><span><br><br>
-              <div class="card-image">
-                <img src="../../src/images/Construtor_Nomeado.png" width="100%"></script>
-                <span class="card-title">
-                </span>
-              </div>
+            <div class="col s6"><b>O que o Metódo Construtor</b><span><br>
+                <br>● Um método construtor, como o próprio nome já diz, é responsável pela criação do objeto daquela
+                classe, iniciando com valores seus atributos ou realizando outras funções que possam vir a ser
+                necessárias.
+                <br>● Em Flutter, classes também têm construtores que permitem personalizar a criação de objetos
+              </span></div>
+
+            <div class="row"></div>
+
+            <div class="col s6"><b>Construtor Padrão</b><span><br>
+                <br>● É fornecido automaticamente pelo Flutter se nenhum construtor personalizado for definido
+                necessárias.
+              </span></div>
+
+            <div class="col s6"><b>Construtor Nomeado</b><span><br>
+                <br>● Permite criar construtores adicionais com nomes diferentes para atender a necessidades específicas
+              </span></div>
+
+            <div class="col s6"><span><br><br>
+                <div class="card-image">
+                  <img src="../../src/images/Construtor_Padrao.png" width="80%"></script>
+                  <span class="card-title">
+                  </span>
+                </div>
+            </div>
+
+            <div class="col s6"><span><br><br>
+                <div class="card-image">
+                  <img src="../../src/images/Construtor_Nomeado.png" width="100%"></script>
+                  <span class="card-title">
+                  </span>
+                </div>
+            </div>
+
+            <div class="row"></div>
+
+            <div class="col s6"><b></b><span><br>
+                <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade.
+                <br> ● O construtor padrão é definido entre chaves {} e utiliza parâmetros nomeados para permitir a
+                atribuição dos valores dos atributos no momento da criação de uma instância da classe.
+                <br>● O construtor padrão define valores padrão vazios para os atributos caso nenhum valor seja
+                fornecido.
+                <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo e atribuímos valores
+                aos atributos nome e idade. Em seguida, imprimimos os valores na saída.
+              </span></div>
+
+            <div class="col s6"><b></b><span><br>
+                <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade. O construtor nomeado
+                ExemploClasse.nomeado é definido utilizando a sintaxe {} para parâmetros nomeados. Ele permite a
+                atribuição dos valores dos atributos no momento da criação de uma instância da classe.
+                <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo utilizando o
+                construtor
+                nomeado ExemploClasse.nomeado. Fornecemos os valores dos parâmetros nome e idade ao criar a instância.
+                <br>● Em seguida, imprimimos os valores dos atributos nome e idade na saída.
+
+              </span></div>
+        </li>
+      </ul>
+
+      <!-- Método Construtor -->
+
+      <!-- Gestão de eventos em widgets -->
+
+      <ul class="collapsible">
+
+        <li class="active">
+          <div class="collapsible-header">Gestão de eventos em widgets
           </div>
+          <div class="collapsible-body row">
 
-          <div class="row"></div>
+            <div class="col s6"><b>Gestão de eventos em widgets</b><span><br>
+                <br>● Em Flutter, os widgets podem responder a eventos, como toques, gestos e interações do usuário.
+                <br>● Cada widget tem métodos específicos para lidar com eventos.
+                <br>● Alguns exemplos de eventos incluem onTap, onLongPress, onDoubleTap, entre outros.
+              </span></div>
 
-          <div class="col s6"><b></b><span><br>
-              <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade.
-              <br> ● O construtor padrão é definido entre chaves {} e utiliza parâmetros nomeados para permitir a
-              atribuição dos valores dos atributos no momento da criação de uma instância da classe.
-              <br>● O construtor padrão define valores padrão vazios para os atributos caso nenhum valor seja fornecido.
-              <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo e atribuímos valores
-              aos atributos nome e idade. Em seguida, imprimimos os valores na saída.
-            </span></div>
+            <div class="row"></div>
 
-          <div class="col s6"><b></b><span><br>
-              <br>● Neste exemplo, a classe ExemploClasse possui dois atributos: nome e idade. O construtor nomeado
-              ExemploClasse.nomeado é definido utilizando a sintaxe {} para parâmetros nomeados. Ele permite a
-              atribuição dos valores dos atributos no momento da criação de uma instância da classe.
-              <br>● No método main, criamos uma instância da classe ExemploClasse chamada exemplo utilizando o
-              construtor
-              nomeado ExemploClasse.nomeado. Fornecemos os valores dos parâmetros nome e idade ao criar a instância.
-              <br>● Em seguida, imprimimos os valores dos atributos nome e idade na saída.
+            <div class="col s6"><b>Exemplo de Gestão de Eventos</b><span><br>
+                <br><b>1- </b>Importamos as bibliotecas necessárias.
+                <br>
+                <br><b>2- </b>Definimos uma classe MyApp que é o ponto de entrada do aplicativo.
+                <br>
+                <br><b>3- </b>MyApp retorna um MaterialApp que configura o aplicativo com um título e a página inicial.
+                <br>
+                <br><b>4- </b>A página inicial é definida como um Scaffold com um AppBar e um body centralizado.
+                <br>
+                <br><b>5- </b>No corpo (body), temos um único ElevatedButton com um texto "Clique aqui".
+                <br>
+                <br><b>6- </b>Quando o botão é clicado (onPressed), uma função anônima é chamada para exibir a mensagem
+                "Botão clicado!" no console.
+              </span></div>
 
-            </span></div>
-      </li>
-    </ul>
+            <div class="col s6"><span><br><br>
+                <div class="card-image">
+                  <img src="../../src/images/Gestao_Eventos.png" width="60%"></script>
+                  <span class="card-title">
+                  </span>
+                </div>
+            </div>
 
-    <!-- Método Construtor -->
+        </li>
+      </ul>
+      <!-- Gestão de eventos em widgets -->
+    </div>
 
-    <!-- Gestão de eventos em widgets -->
-
-    <ul class="collapsible">
-
-      <li class="active">
-        <div class="collapsible-header">Gestão de eventos em widgets
-        </div>
-        <div class="collapsible-body row">
-
-          <div class="col s6"><b>Gestão de eventos em widgets</b><span><br>
-              <br>● Em Flutter, os widgets podem responder a eventos, como toques, gestos e interações do usuário.
-              <br>● Cada widget tem métodos específicos para lidar com eventos.
-              <br>● Alguns exemplos de eventos incluem onTap, onLongPress, onDoubleTap, entre outros.
-            </span></div>
-
-          <div class="row"></div>
-
-          <div class="col s6"><b>Exemplo de Gestão de Eventos</b><span><br>
-              <br><b>1- </b>Importamos as bibliotecas necessárias.
-              <br>
-              <br><b>2- </b>Definimos uma classe MyApp que é o ponto de entrada do aplicativo.
-              <br>
-              <br><b>3- </b>MyApp retorna um MaterialApp que configura o aplicativo com um título e a página inicial.
-              <br>
-              <br><b>4- </b>A página inicial é definida como um Scaffold com um AppBar e um body centralizado.
-              <br>
-              <br><b>5- </b>No corpo (body), temos um único ElevatedButton com um texto "Clique aqui".
-              <br>
-              <br><b>6- </b>Quando o botão é clicado (onPressed), uma função anônima é chamada para exibir a mensagem
-              "Botão clicado!" no console.
-            </span></div>
-
-          <div class="col s6"><span><br><br>
-              <div class="card-image">
-                <img src="../../src/images/Gestao_Eventos.png" width="60%"></script>
-                <span class="card-title">
-                </span>
-              </div>
-          </div>
-
-      </li>
-    </ul>
-    <!-- Gestão de eventos em widgets -->
   </div>
+
 
   <!--Footer-->
 
