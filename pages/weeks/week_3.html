@@ -44,64 +44,213 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
+  <!-- Introdução -->
+
+  <h1>Introdução ao Flutter</h1>
   <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
+
     <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
-        </p>
-      </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
+      <div class="col s12"><span class="flow-text"></span>
+        <br> ● Neste tópico, vamos ver a instalação do Flutter e o desenvolvimento de um aplicativo simples em Flutter.
         </p>
       </div>
     </div>
-    <ul class="collapsible">
-      <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Animações Implícitas</div>
-        <div class="collapsible-body">
-          <div class="row">
 
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
-            <div class="col s6">
+    <!-- Fim Introdução -->
+
+    <!-- Instalação do Flutter -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Instalação do Flutter</div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>Instalação do Flutter</b><span><br>
+              <br>● A instalação do Flutter é muito simples. Basta acessar o site:
+              https://flutter.dev/docs/get-started/install, escolher o sistema operacional, e, baixar
+              e descompactar o pacote em uma pasta na sua máquina local.
+              <br>● Nessa apresentação iremos utilizar o Windows 10.
+            </span></div>
+
+          <div class="col s6"><b>Requistos minímos</b><span><br>
+              <br>Os requisitos mínimos exigidos são:
+              <br>● Sistemas operacionais: Windows 7 SP1 ou posterior (64 bits)
+              Espaço em disco: 400 MB (não inclui espaço em disco para IDE / ferramentas).
+              Ferramentas: O Flutter depende dessas ferramentas estarem disponíveis em seu ambiente.
+              <br><br><b>1-</b> Windows PowerShell 5.0 ou mais recente (isso é pré-instalado com o Windows 10)
+              <br><b>2-</b> Git para Windows 2.x - para executar comandos git;
+            </span></div>
+
+          <div class="col s6"><b>Passo a Passo</b><span><br>
+              <br><b>1-</b> A seguir baixe o SDK Flutter mais atual. Em abril de 2019 a versão atual é a: 3.10.5
+              <br><b>2-</b> Extraia o arquivo zip que você acabou de baixar em uma pasta na sua máquina local (Evite
+              instalar na pasta Arquivos de Programas). Eu criei um pasta c:\flutter e descompactei o pacote nesta
+              pasta.
+              <br><b>3-</b> Localize o arquivo flutter_console.bat dentro do diretório flutter e inicie-o clicando duas
+              vezes
+              nele. Será aberta uma janela de comandos onde você poderá emitir comandos Flutter.
+              <br><br><b>Obs:</b> É importante atualizar o PATH do seu ambiente para poder emitir comandos no prompt de
+              comandos
+              (cmd). Para
+              isso basta incluir o caminho onde você instalou o Flutter e a pasta bin na variável de ambiente PATH.
+              <br>No meu desktop ficou assim: c:\flutter\bin. (Faça isso em Painel de Controle -> Sistema -> Editar
+              variáveis de ambiente do sistema)
+            </span></div>
+
+          <div class="col s6"><span><br><br>
               <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
+                <img src="../../src/images/Instalacao_Flutter.png" width="100%"></script>
+                <span class="card-title">
+                </span>
               </div>
-            </div>
+
           </div>
-        </div>
       </li>
     </ul>
+
+    <!-- Fim Instalação do Flutter  -->
+
+    <!-- Verificando o seu ambiente -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Verificando o Ambiente</div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>Verificando o Ambiente</b><span><br>
+              <br>● Agora que você configurou a variável de ambiente, vamos verificar se tudo está funcionando bem, e,
+              se o comando flutter é reconhecido pelo prompt de comando.
+              <br>● Abra uma janela de prompt de comandos e digite o comando "flutter doctor" e pressione enter.
+              <br>● Você vai ver um relatório completo da instalação do SDK do flutter na sua máquina indicando o que
+              pode estar faltando.
+            </span></div>
+
+
+          <div class="col s12"><span><br>
+              <div class="card-image">
+                <img src="../../src/images/Verificacao_Flutter.png" width="50%">
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
+          <div class="col s6"><span><br>
+              <br>● O DART SDK (DART é a linguagem de programação oficial para flutter) é fornecido com o flutter e você
+              não precisa instalá-lo separadamente.
+              <br> ● Você vai precisar ter no seu ambiente o SDK do Android instalado. Isso é obrigatório.
+              <br><br><b>OBS:</b> É possível usar o Android Studio como editor. Iremos usar o Visual Studio Code e por
+              isso não utilizaremos essa ferramenta.
+            </span></div>
+
+      </li>
+    </ul>
+
+    <!-- Fim  Verificando o seu ambiente -->
+
+    <!-- Configurando o ambiente -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Configurando o Ambiente</div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>Configurando o Ambiente</b><span><br>
+              <br>● Para poder usar o Visual Studio Code com o Flutter você tem que instalar o plugin Flutter no VS
+              Code:
+              <br><br>● Outro requisito é possuir um dispositivo Android ou iOS para testar. Recomendamos o Genymotion
+              mas você pode baixar um dispositivo Android a seu gosto.
+              <br>Assim, com o Flutter instalado e tendo o Visual Studio Code e o Genymotion instalados, estamos prontos
+              para usar o Flutter.
+              <br><br><b>Nota: </b> Baixe o Visual Studio Code aqui: https://code.visualstudio.com/download
+              <br><br>Baixe o Genymotion aqui : https://www.genymotion.com/ (crie uma conta e baixe a versão
+              personal)
+            </span></div>
+
+          <div class="col s6"><span><br>
+              <div class="card-image">
+                <img src="../../src/images/Configurando_Ambiente.png" width="100%">
+                <span class="card-title">
+                </span>
+              </div>
+          </div>
+
+      </li>
+    </ul>
+
+    <!-- Fim Configurando o ambiente -->
+
+    <!-- Criando um aplicativo em flutter -->
+
+    <ul class="collapsible">
+
+      <li>
+        <div class="collapsible-header">Criando um aplicativo em Flutter</div>
+        <div class="collapsible-body row">
+
+          <div class="col s6"><b>Criando um Aplicativo</b><span><br>
+              <br>● Abra o Visual Studio Code e a seguir abra a paleta de comandos teclando CTRL+SHIFT+P;
+              <br>A seguir digite flutter para ver os comandos disponíveis e clique em new Project;
+
+              <img src="../../src/images/Aplicativo_Flutter1.png" width="100%">
+              <span class="card-title">
+
+                <br>● Informe o nome do projeto (tem que usar somente minúsculas) que deseja criar e tecle Enter:
+
+                <img src="../../src/images/Aplicativo_Flutter2.png" width="100%">
+                <span class="card-title">
+                </span></div>
+
+          <div class="col s7"><b></b><span>
+              <br>● A seguir selecione uma pasta onde o projeto vai ser criado.
+              <br>Após alguns instantes você verá o projeto sendo criado e exibido no VS Code na pasta indicada:
+              <br>
+
+              <img src="../../src/images/Aplicativo_Flutter3.png" width="100%">
+              <span class="card-title">
+              </span>
+
+              <br>● Na pasta lib do projeto esta o arquivo main.dart onde esta o código do projeto.
+              <br>● Para executar o projeto basta pressionar F5 , ou se quiser executar o projeto na linha de comando,
+              abra um terminal <br> de comandos e posicione-se na pasta raiz do projeto que deseja executar e digite o
+              comando:
+              <br>
+              <br>flutter run -d all
+              <br>
+              <br>● Antes de executar é bom verificar se você tem um dispositivo pronto para ser usado.
+              <br>● Abra a paleta de comandos e digite : Flutter e a seguir a opção Select a device;
+              <br>● Será aberta uma janela exibindo os dispositivos android disponíveis. Basta selecionar o desejado.
+
+              <img src="../../src/images/Aplicativo_Flutter4.png" width="100%">
+              <span class="card-title">
+              </span>
+
+              <br>● A seguir pressione F5 para executar e após alguns segundos...
+
+              <img src="../../src/images/Aplicativo_Flutter5.png" width="60%">
+              <span class="card-title">
+              </span>
+
+              <br>Seu primeiro aplicativo Flutter criado
+
+          </div>
+          <!-- <div class="col s6"><span><br>
+              <div class="card-image">
+                <img src="../../src/images/Configurando_Ambiente.png" width="100%">
+                <span class="card-title">
+                </span>
+              </div>
+          </div> -->
+
+      </li>
+    </ul>
+
+    <!-- Fim Criando um aplicativo em flutter -->
+
   </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
-  </div>
+
   <!--Nav Bar-->
 
   <!--Nav Bar-->

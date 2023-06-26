@@ -44,48 +44,144 @@
   </nav>
   <!--Nav Bar-->
 
-  <h1>ANIMAÇÕES EM FLUTTER</h1>
+  <h1>Arquitetura do Flutter</h1>
   <div class="section">
-    <h3>ANIMAÇÕES EXPLÍCITAS VS IMPLÍCITAS</h3>
     <div class="row">
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES EXPLÍCITAS</span>
-        <p>As animações explícitas no Flutter são aquelas que você cria e controla manualmente <br> Elas permitem animar
-          diferentes propriedades de um widget, como posição, tamanho, opacidade e rotação.
-        </p>
-      </div>
-      <div class="col s6"><span class="flow-text">ANIMAÇÕES IMPLÍCITAS</span>
-        <p>As animações implícitas no Flutter são animações préconstruídas que são aplicadas automaticamente a certos
-          widget s
-        </p>
+      <div class="col s6">
+        <span class="flow-text">INTRODUÇÃO</span>
+        <p>Neste tópico, iremos ter uma introdução as arquiteturas disponíveis para flutter como MVC, MVVM, MVP, entre outras.</p>
       </div>
     </div>
     <ul class="collapsible">
       <li>
-        <div class="collapsible-header">Animações Explícitas</div>
-        <div class="collapsible-body"><span> É o mais poderoso tipo de animação com
-            Flutter. Você tem o total controle sobre
-            ela: iniciar, parar, repetir, reverter... não
-            importa o "movimento".
-            <br>São úteis para criar animações complexas
-            e personalizadas.</span>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Animações Implícitas</div>
+        <div class="collapsible-header">Introdução às arquiteturas do Flutter</div>
         <div class="collapsible-body">
           <div class="row">
-
-            <div class="col s6"><span> É o mais poderoso tipo de animação com
-                Flutter. Você tem o total controle sobre
-                ela: iniciar, parar, repetir, reverter... não
-                importa o "movimento".
-                <br>São úteis para criar animações complexas
-                e personalizadas.</span></div>
-            <div class="col s6">
-              <div class="card-image">
-                <img src="#########">
-                <span class="card-title">IMAGEM BONITINHA</span>
-              </div>
+            <div class="col s4">
+              <span>
+                <b>MVC:</b>
+                <br>
+                ● Arquitetura recomendada para o
+                desenvolvimento de aplicativos Flutter é
+                baseada no padrão de arquitetura MVC
+                (Model-View-Controller)
+                <br>
+                ● Separar "as áreas de trabalho" e "as áreas
+                de responsabilidade" ao desenvolver
+                software
+                <br>
+                ● Isso significa separar "a interface" da
+                "funcionalidade" dos "dados" que
+                compõem o aplicativo
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>MVP:</b>
+                <br>
+                ● A arquitetura MVP (Model-View-Presenter) é um padrão de design que
+                tem como objetivo separar a lógica de
+                negócios da interface do usuário
+                <br>
+                ● O modelo uma interface que define os
+                dados a serem exibidos ou manipulados
+                na interface do usuário
+                <br>
+                ● A visão é uma interface passiva que
+                exibe dados (o modelo) e roteia
+                comandos do usuário (eventos) para o
+                apresentador agir sobre esses dados
+                <br>
+                ● O apresentador recupera dados dos
+                repositórios, o modelo e os formata para
+                exibição na visão
+              </span>
+            </div>
+            <div class="col s4">
+              <b>MVVM:</b>
+              <br>
+              ● Model-View-ViewModel (MVVM), separa
+              o modelo de dados de um aplicativo, a
+              interface do usuário e a lógica do
+              aplicativo em camadas distintas
+              <br>
+              ● O modelo de dados representa os dados
+              e a lógica de negócios do aplicativo
+              <br>
+              ● A visualização (view) é a interface do
+              usuário (IU) do aplicativo
+              <br>
+              ● O ViewModel é responsável por conectar
+              o Model e a View, fornecendo dados para
+              a exibição e comunica as interações do
+              usuário ao modelo
+            </div>
+          </div>  
+        </div>
+      </li>
+    </ul>
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">Implementação do padrão de arquitetura</div>
+        <div class="collapsible-body">
+          <div class="row">
+            <div class="col s4">
+              <span>
+                <b>Provider:</b>
+                <br>
+                ● Fácil de aprender e possui muito menos
+                código repetitivo em comparação com
+                outros padrões, como a Arquitetura
+                BLoC, que usa o Provider internamente
+                <br>
+                ● Responsável por observar um objeto e
+                avisar para todos os componentes
+                interessados se esse objeto mudou, para
+                que eles se atualizem
+                <br>
+                ● Isso é conhecido como "Single Source of
+                Truth" ou "Fonte Única da Verdade
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>Bloc:</b>
+                <br>
+                ● A arquitetura BLoC (Business Logic
+                Component) permite uma separação da
+                lógica de negócio da sua aplicação e da
+                UI através do uso de Streams
+                <br>
+                ● É construída toda a lógica de negócios
+                com essas streams, o que nos permite o
+                uso de bibliotecas Reactive como a
+                RxDart
+                <br>
+                ● É possível fazer streams que se originam
+                da arquitetura BLoC e podemos ter
+                streams que se conectam da UI para a
+                BLoC
+              </span>
+            </div>
+            <div class="col s4">
+              <span>
+                <b>MobX:</b>
+                <br>
+                ● Torna o gerenciamento de estado
+                simples e escalável, aplicando
+                transparentemente a programação
+                reativa funcional
+                <br>
+                ● Escrever código minimalista e sem
+                boilerplate que capture sua intenção
+                <br>
+                ● O MobX é descomprometido e permite
+                que você gerencie o estado do seu
+                aplicativo fora de qualquer estrutura de
+                IU, tornando seu código desacoplado,
+                portátil e, acima de tudo, facilmente
+                testável
+              </span>
             </div>
           </div>
         </div>
@@ -94,13 +190,10 @@
   </div>
   <div class="divider"></div>
   <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
+    <p><br></p>
   </div>
-  <div class="divider"></div>
   <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
+    <p><br></p>
   </div>
   <!--Nav Bar-->
 
